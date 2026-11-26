@@ -1,0 +1,17 @@
+{
+ "schema": 1,
+ "title": "Pulse",
+ "latest": "2026-11-26",
+ "days": [
+  {
+   "date": "2026-11-26",
+   "headline": "AI safety fights and coding agent strain lead today",
+   "topics": [
+    "AI evals",
+    "AI safety",
+    "Coding agents"
+   ],
+   "stories": 15
+  }
+ ]
+}
