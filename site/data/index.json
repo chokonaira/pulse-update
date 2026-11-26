@@ -5,13 +5,13 @@
  "days": [
   {
    "date": "2026-11-26",
-   "headline": "AI safety fights and coding review burdens dominate today",
+   "headline": "AI trust fights span safety, evals and coding agents",
    "topics": [
     "AI evals",
     "AI safety",
     "Coding agents"
    ],
-   "stories": 13
+   "stories": 14
   }
  ]
 }
