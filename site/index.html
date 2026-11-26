@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pulse</title>
+  <meta name="description" content="A daily briefing on what people are actually saying, built from the last 30 days of Reddit, Hacker News, X, YouTube and more.">
+  <meta name="theme-color" content="#F1F0F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15132A" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Pulse">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="preload" href="./fonts/literata-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the brief</a>
+  <div class="notice" id="notice" role="status" hidden></div>
+  <main id="main" tabindex="-1" aria-live="polite">
+    <p class="loading">Loading today's brief</p>
+  </main>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#today" data-tab="today">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h3.2l2.3-6 3.4 11 2.6-8 1.6 3H21"/></svg>
+      <span>Today</span>
+    </a>
+    <a href="#rising" data-tab="rising">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18 10 12l3.5 3.5L20 9M15 9h5v5"/></svg>
+      <span>Rising</span>
+    </a>
+    <a href="#archive" data-tab="archive">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+      <span>Archive</span>
+    </a>
+  </nav>
+  <script src="./app.js" defer></script>
+</body>
+</html>

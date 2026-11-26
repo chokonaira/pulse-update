@@ -1,0 +1,54 @@
+# Pulse: a daily briefing built from the last30days research engine.
+#
+# This is the only file you need to edit. Change the topics below, commit,
+# and the next morning's run picks them up. You can also start a run by hand
+# from the Actions tab ("Daily brief" > "Run workflow").
+
+[site]
+title = "Pulse"
+# The date on each brief, and "today", are worked out in this timezone.
+timezone = "Europe/Berlin"
+# How many daily briefs to keep in the archive.
+keep_days = 365
+
+[synthesis]
+# Claude writes the readable brief when the ANTHROPIC_API_KEY secret is set.
+# Without it you still get a brief, built straight from the ranked evidence.
+model = "claude-sonnet-5-5"   # "claude-haiku-5-5" costs a fraction of this
+effort = "medium"             # "low", "medium" or "high"
+# Upper limit on evidence sent to Claude per topic, in characters.
+max_evidence_chars = 60000
+
+[engine]
+# last30days release to run. Pinned so an upstream change can't break you.
+version = "v4.6.0"
+depth = "default"             # "quick", "default" or "deep"
+days = 30
+timeout_minutes = 12          # per topic
+
+# One [[topic]] block per thing you want to follow.
+#   name        what the app shows
+#   query       what the engine searches for
+#   subreddits  communities worth searching (optional, sharpens Reddit)
+#   github_repos, x_handle, x_related, search  (optional, see README)
+
+[[topic]]
+name = "AI evals"
+query = "LLM evals"
+subreddits = ["MachineLearning", "LocalLLaMA"]
+
+[[topic]]
+name = "AI safety"
+query = "AI safety"
+subreddits = ["ControlProblem", "MachineLearning"]
+
+[[topic]]
+name = "Coding agents"
+query = "AI coding agents"
+subreddits = ["ClaudeAI", "ClaudeCode", "ChatGPTCoding", "cursor"]
+
+# "Rising" sweeps Reddit, Hacker News and friends for topics that are
+# picking up speed. Set domain = "" for global trending across everything.
+[rising]
+enabled = true
+domain = "AI"

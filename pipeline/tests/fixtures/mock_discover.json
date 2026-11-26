@@ -1,0 +1,240 @@
+{
+  "domain": "AI",
+  "feeds": {
+    "category": null,
+    "sources": [
+      "reddit",
+      "hackernews",
+      "digg",
+      "x"
+    ],
+    "subreddits": [
+      "all"
+    ]
+  },
+  "generated_at": "2026-11-26T00:24:54.388301Z",
+  "kind": "discovery",
+  "outcome": "ok",
+  "results": [
+    {
+      "command": "/last30days \"Agent memory protocols\"",
+      "corroboration_count": 3,
+      "covered": false,
+      "engagement": {
+        "grounding": {},
+        "jobs": {
+          "open_roles": 2
+        },
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "evidence_urls": [
+        "https://example.com/article/agent-memory-protocols",
+        "https://boards.greenhouse.io/example/jobs/agent-memory-protocols-1",
+        "https://boards.greenhouse.io/example/jobs/agent-memory-protocols-2",
+        "https://reddit.com/r/example/comments/agent-memory-protocols-1"
+      ],
+      "last_surfaced": null,
+      "momentum": "building",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 1,
+      "sources": [
+        "grounding",
+        "jobs",
+        "reddit"
+      ],
+      "top_comment": "\"Strong firsthand feedback from agent memory protocols users.\"",
+      "topic": "Agent memory protocols",
+      "velocity_score": 135.35,
+      "why_spiking": "4 evidence items on grounding, jobs and reddit generated 170 native interactions. Agent memory protocols",
+      "x_article_angle": null
+    },
+    {
+      "command": "/last30days \"Browser-using agents\"",
+      "corroboration_count": 3,
+      "covered": false,
+      "engagement": {
+        "grounding": {},
+        "jobs": {
+          "open_roles": 2
+        },
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "evidence_urls": [
+        "https://example.com/article/browser-using-agents",
+        "https://reddit.com/r/example/comments/browser-using-agents-1",
+        "https://boards.greenhouse.io/example/jobs/browser-using-agents-1",
+        "https://boards.greenhouse.io/example/jobs/browser-using-agents-2"
+      ],
+      "last_surfaced": null,
+      "momentum": "building",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 2,
+      "sources": [
+        "grounding",
+        "jobs",
+        "reddit"
+      ],
+      "top_comment": "\"Strong firsthand feedback from browser-using agents users.\"",
+      "topic": "Browser-using agents",
+      "velocity_score": 135.35,
+      "why_spiking": "4 evidence items on grounding, jobs and reddit generated 170 native interactions. Browser-using agents",
+      "x_article_angle": null
+    },
+    {
+      "command": "/last30days \"Local agent runtimes\"",
+      "corroboration_count": 3,
+      "covered": false,
+      "engagement": {
+        "grounding": {},
+        "jobs": {
+          "open_roles": 2
+        },
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "evidence_urls": [
+        "https://reddit.com/r/example/comments/local-agent-runtimes-1",
+        "https://example.com/article/local-agent-runtimes",
+        "https://boards.greenhouse.io/example/jobs/local-agent-runtimes-1",
+        "https://boards.greenhouse.io/example/jobs/local-agent-runtimes-2"
+      ],
+      "last_surfaced": null,
+      "momentum": "building",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 3,
+      "sources": [
+        "grounding",
+        "jobs",
+        "reddit"
+      ],
+      "top_comment": "\"Strong firsthand feedback from local agent runtimes users.\"",
+      "topic": "Local agent runtimes",
+      "velocity_score": 135.35,
+      "why_spiking": "4 evidence items on grounding, jobs and reddit generated 170 native interactions. Local agent runtimes",
+      "x_article_angle": null
+    },
+    {
+      "command": "/last30days \"Multi-agent orchestration\"",
+      "corroboration_count": 3,
+      "covered": false,
+      "engagement": {
+        "grounding": {},
+        "jobs": {
+          "open_roles": 2
+        },
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "evidence_urls": [
+        "https://example.com/article/multi-agent-orchestration",
+        "https://boards.greenhouse.io/example/jobs/multi-agent-orchestration-1",
+        "https://boards.greenhouse.io/example/jobs/multi-agent-orchestration-2",
+        "https://reddit.com/r/example/comments/multi-agent-orchestration-1"
+      ],
+      "last_surfaced": null,
+      "momentum": "building",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 4,
+      "sources": [
+        "grounding",
+        "jobs",
+        "reddit"
+      ],
+      "top_comment": "\"Strong firsthand feedback from multi-agent orchestration users.\"",
+      "topic": "Multi-agent orchestration",
+      "velocity_score": 135.35,
+      "why_spiking": "4 evidence items on grounding, jobs and reddit generated 170 native interactions. Multi-agent orchestration",
+      "x_article_angle": null
+    },
+    {
+      "command": "/last30days \"Agent security sandboxes\"",
+      "corroboration_count": 3,
+      "covered": false,
+      "engagement": {
+        "grounding": {},
+        "jobs": {
+          "open_roles": 2
+        },
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "evidence_urls": [
+        "https://example.com/article/agent-security-sandboxes",
+        "https://boards.greenhouse.io/example/jobs/agent-security-sandboxes-1",
+        "https://boards.greenhouse.io/example/jobs/agent-security-sandboxes-2",
+        "https://reddit.com/r/example/comments/agent-security-sandboxes-1"
+      ],
+      "last_surfaced": null,
+      "momentum": "building",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 5,
+      "sources": [
+        "grounding",
+        "jobs",
+        "reddit"
+      ],
+      "top_comment": "\"Strong firsthand feedback from agent security sandboxes users.\"",
+      "topic": "Agent security sandboxes",
+      "velocity_score": 135.35,
+      "why_spiking": "4 evidence items on grounding, jobs and reddit generated 170 native interactions. Agent security sandboxes",
+      "x_article_angle": null
+    },
+    {
+      "command": "/last30days \"Voice agent latency\"",
+      "corroboration_count": 3,
+      "covered": false,
+      "engagement": {
+        "grounding": {},
+        "jobs": {
+          "open_roles": 2
+        },
+        "reddit": {
+          "num_comments": 48
+        }
+      },
+      "evidence_urls": [
+        "https://reddit.com/r/example/comments/voice-agent-latency-1",
+        "https://boards.greenhouse.io/example/jobs/voice-agent-latency-1",
+        "https://boards.greenhouse.io/example/jobs/voice-agent-latency-2",
+        "https://example.com/article/voice-agent-latency"
+      ],
+      "last_surfaced": null,
+      "momentum": "building",
+      "podcast_angle": null,
+      "previously_surfaced_count": 0,
+      "rank": 6,
+      "sources": [
+        "grounding",
+        "jobs",
+        "reddit"
+      ],
+      "top_comment": "\"Strong firsthand feedback from voice agent latency users.\"",
+      "topic": "Voice agent latency",
+      "velocity_score": 135.35,
+      "why_spiking": "4 evidence items on grounding, jobs and reddit generated 170 native interactions. Voice agent latency",
+      "x_article_angle": null
+    }
+  ],
+  "schema_version": "1.1",
+  "source_status": {
+    "digg": "ok",
+    "hackernews": "ok",
+    "reddit": "ok",
+    "x": "ok"
+  },
+  "warnings": [],
+  "weak_signal": null,
+  "window_days": 30
+}

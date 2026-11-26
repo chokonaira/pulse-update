@@ -1,0 +1,145 @@
+name: Daily brief
+
+# Every morning: research the topics in pulse.toml with last30days, have
+# Claude write the brief, save it to site/data and publish the site.
+
+on:
+  schedule:
+    - cron: "41 3 * * *"   # 04:41 in Berlin in winter, 05:41 in summer
+  workflow_dispatch:
+    inputs:
+      topics:
+        description: "Only these topic ids, comma separated (blank for all)"
+        required: false
+        default: ""
+      skip_rising:
+        description: "Skip the Rising sweep"
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  research:
+    # The third-party engine runs here, with a read-only token.
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Fetch the last30days engine
+        run: |
+          version=$(python -c "import tomllib; print(tomllib.load(open('pulse.toml','rb')).get('engine',{}).get('version','v4.6.0'))")
+          echo "Using last30days $version"
+          git clone --quiet --depth 1 --branch "$version" https://github.com/mvanhorn/last30days-skill.git "$RUNNER_TEMP/last30days"
+
+      - name: Install free extra sources (YouTube, arXiv, Techmeme, Digg)
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet --upgrade yt-dlp
+          for cli in arxiv techmeme digg; do
+            npx -y @mvanhorn/printing-press-library@0.1.27 install "$cli" --cli-only || echo "::warning::$cli CLI did not install; that source is skipped"
+          done
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Research and write today's brief
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Optional engine keys: each one switches on or strengthens a source.
+          SCRAPECREATORS_API_KEY: ${{ secrets.SCRAPECREATORS_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          CT0: ${{ secrets.CT0 }}
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          GITHUB_TOKEN: ${{ github.token }}   # read-only here; lifts GitHub's rate limit
+          ONLY_TOPICS: ${{ inputs.topics }}
+          SKIP_RISING: ${{ inputs.skip_rising }}
+        run: |
+          args=()
+          if [ -n "$ONLY_TOPICS" ]; then args+=(--only "$ONLY_TOPICS"); fi
+          if [ "$SKIP_RISING" = "true" ]; then args+=(--no-rising); fi
+          python pipeline/run_daily.py \
+            --engine "$RUNNER_TEMP/last30days/skills/last30days/scripts/last30days.py" \
+            --config pulse.toml --out site/data --work "$RUNNER_TEMP/work" "${args[@]}"
+
+      - name: Keep engine logs for debugging
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: engine-logs
+          path: ${{ runner.temp }}/work/**/engine.log
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: brief-data
+          path: site/data
+          retention-days: 3
+
+  publish:
+    needs: research
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Clear old data (so briefs past keep_days are removed)
+        run: rm -rf site/data
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: brief-data
+          path: site/data
+
+      - name: Save the brief to the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site/data
+          if git diff --cached --quiet; then
+            echo "No changes to save."
+          else
+            git commit --quiet -m "Brief for $(date -u +%F)"
+            git pull --quiet --rebase origin "${GITHUB_REF_NAME}"
+            git push --quiet origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  deploy:
+    needs: publish
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

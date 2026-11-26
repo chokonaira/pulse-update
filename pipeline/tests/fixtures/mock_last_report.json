@@ -1,0 +1,2239 @@
+{
+  "schema": "last30days-report-cache/v2",
+  "run_id": "aea5c88ed4e444b7a1a1782fc526e6ae",
+  "topic": "AI evals",
+  "timestamp": "2026-11-26T00:25:06.452780+00:00",
+  "comparison": false,
+  "x_envelope_sha256": null,
+  "research_options": {
+    "search": null,
+    "quick": false,
+    "deep": false,
+    "mock": true,
+    "web_backend": "auto",
+    "perplexity_search_type": null,
+    "hiring_signals": false,
+    "x_handle": null,
+    "x_related": null,
+    "official_site": null,
+    "no_x_handle": null,
+    "subreddits": null,
+    "dedicated_subreddits": null,
+    "devto_tags": null,
+    "tiktok_hashtags": null,
+    "tiktok_creators": null,
+    "ig_creators": null,
+    "max_results": null,
+    "max_per_source": null,
+    "max_source_fetches": null,
+    "auto_resolve": false,
+    "github_user": null,
+    "github_repo": null,
+    "ticker": null,
+    "company": null,
+    "jobs_board": null,
+    "trustpilot_domain": null,
+    "amazon_query": null,
+    "meta_ads_page": null,
+    "telegram_sources": null,
+    "competitors": null,
+    "competitors_list": null,
+    "polymarket_keywords": null,
+    "corpus_all_time": false,
+    "drill": null,
+    "employer": null,
+    "linkedin": null,
+    "email_sha256": null,
+    "corpus_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "plan": null,
+    "competitors_plan": null,
+    "config_sha256": "c934c41e567c3449a1934e852d197768637a0e9996e8c210c86595af7419f93c"
+  },
+  "reports": [
+    {
+      "entity": "AI evals",
+      "report": {
+        "topic": "AI evals",
+        "range_from": "2026-10-27",
+        "range_to": "2026-11-26",
+        "generated_at": "2026-11-26T00:25:06.452361+00:00",
+        "provider_runtime": {
+          "reasoning_provider": "gemini",
+          "planner_model": "gemini-3.1-flash-lite",
+          "rerank_model": "gemini-3.1-flash-lite"
+        },
+        "query_plan": {
+          "intent": "concept",
+          "freshness_mode": "evergreen_ok",
+          "cluster_mode": "none",
+          "raw_topic": "AI evals",
+          "subqueries": [
+            {
+              "label": "primary",
+              "search_query": "ai evals",
+              "ranking_query": "What recent evidence from the last 30 days is most relevant to AI evals?",
+              "sources": [
+                "reddit",
+                "x",
+                "youtube",
+                "tiktok",
+                "instagram",
+                "hackernews",
+                "bluesky",
+                "truthsocial",
+                "grounding",
+                "xiaohongshu",
+                "github",
+                "threads",
+                "pinterest",
+                "digg",
+                "arxiv",
+                "techmeme",
+                "trustpilot",
+                "amazon",
+                "meta_ads",
+                "jobs",
+                "linkedin",
+                "dripstack",
+                "telegram",
+                "devto"
+              ],
+              "weight": 0.5
+            },
+            {
+              "label": "perplexity-whole-topic",
+              "search_query": "AI evals",
+              "ranking_query": "What current source-grounded evidence matters for AI evals?",
+              "sources": [
+                "perplexity"
+              ],
+              "weight": 0.5
+            }
+          ],
+          "source_weights": {
+            "reddit": 0.038461538461538464,
+            "x": 0.038461538461538464,
+            "youtube": 0.038461538461538464,
+            "tiktok": 0.038461538461538464,
+            "instagram": 0.038461538461538464,
+            "hackernews": 0.038461538461538464,
+            "bluesky": 0.038461538461538464,
+            "truthsocial": 0.038461538461538464,
+            "polymarket": 0.038461538461538464,
+            "grounding": 0.038461538461538464,
+            "xiaohongshu": 0.038461538461538464,
+            "github": 0.038461538461538464,
+            "perplexity": 0.038461538461538464,
+            "threads": 0.038461538461538464,
+            "pinterest": 0.038461538461538464,
+            "digg": 0.038461538461538464,
+            "arxiv": 0.038461538461538464,
+            "techmeme": 0.038461538461538464,
+            "trustpilot": 0.038461538461538464,
+            "amazon": 0.038461538461538464,
+            "meta_ads": 0.038461538461538464,
+            "jobs": 0.038461538461538464,
+            "linkedin": 0.038461538461538464,
+            "dripstack": 0.038461538461538464,
+            "telegram": 0.038461538461538464,
+            "devto": 0.038461538461538464
+          },
+          "notes": [
+            "fallback-plan"
+          ],
+          "person_identity_anchors": [],
+          "jobs_queries": [],
+          "person_run": false
+        },
+        "clusters": [
+          {
+            "cluster_id": "cluster-1",
+            "title": "ai evals Classic | Everyday Model - 4.7/5 (8,446 ratings)",
+            "candidate_ids": [
+              "https://amazon.com/dp/B0MOCK00X2"
+            ],
+            "representative_ids": [
+              "https://amazon.com/dp/B0MOCK00X2"
+            ],
+            "sources": [
+              "amazon"
+            ],
+            "score": 64.32881462799496
+          },
+          {
+            "cluster_id": "cluster-2",
+            "title": "ai evals Pro Model | Flagship Edition - 4.4/5 (459 ratings)",
+            "candidate_ids": [
+              "https://amazon.com/dp/B0MOCK00X1"
+            ],
+            "representative_ids": [
+              "https://amazon.com/dp/B0MOCK00X1"
+            ],
+            "sources": [
+              "amazon"
+            ],
+            "score": 60.42754342431762
+          },
+          {
+            "cluster_id": "cluster-3",
+            "title": "ai evals Mini | New Release - (57 ratings)",
+            "candidate_ids": [
+              "https://amazon.com/dp/B0MOCK00X3"
+            ],
+            "representative_ids": [
+              "https://amazon.com/dp/B0MOCK00X3"
+            ],
+            "sources": [
+              "amazon"
+            ],
+            "score": 57.72631257631257
+          },
+          {
+            "cluster_id": "cluster-4",
+            "title": "Digg cluster about ai evals",
+            "candidate_ids": [
+              "https://di.gg/ai/mock1abc-ai-evals"
+            ],
+            "representative_ids": [
+              "https://di.gg/ai/mock1abc-ai-evals"
+            ],
+            "sources": [
+              "digg"
+            ],
+            "score": 47.418814627994955
+          },
+          {
+            "cluster_id": "cluster-5",
+            "title": "ai evals: TrustScore 3.4",
+            "candidate_ids": [
+              "https://trustpilot.com/review/ai-evals.example.com"
+            ],
+            "representative_ids": [
+              "https://trustpilot.com/review/ai-evals.example.com"
+            ],
+            "sources": [
+              "trustpilot"
+            ],
+            "score": 46.07881462799495
+          },
+          {
+            "cluster_id": "cluster-6",
+            "title": "People on X are discussing ai evals right now.",
+            "candidate_ids": [
+              "https://x.com/example/status/ai-evals-1"
+            ],
+            "representative_ids": [
+              "https://x.com/example/status/ai-evals-1"
+            ],
+            "sources": [
+              "x"
+            ],
+            "score": 44.68881462799495
+          },
+          {
+            "cluster_id": "cluster-9",
+            "title": "Major development in ai evals reshapes the industry",
+            "candidate_ids": [
+              "https://techmeme.com/260627/p1-ai-evals"
+            ],
+            "representative_ids": [
+              "https://techmeme.com/260627/p1-ai-evals"
+            ],
+            "sources": [
+              "techmeme"
+            ],
+            "score": 39.708814627994954
+          },
+          {
+            "cluster_id": "cluster-12",
+            "title": "Founding Enterprise Solutions Engineer",
+            "candidate_ids": [
+              "https://boards.greenhouse.io/example/jobs/ai-evals-1"
+            ],
+            "representative_ids": [
+              "https://boards.greenhouse.io/example/jobs/ai-evals-1"
+            ],
+            "sources": [
+              "jobs"
+            ],
+            "score": 35.57881462799496
+          },
+          {
+            "cluster_id": "cluster-7",
+            "title": "ai evals discussion thread",
+            "candidate_ids": [
+              "https://reddit.com/r/example/comments/ai-evals-1"
+            ],
+            "representative_ids": [
+              "https://reddit.com/r/example/comments/ai-evals-1"
+            ],
+            "sources": [
+              "reddit"
+            ],
+            "score": 43.14881462799495
+          },
+          {
+            "cluster_id": "cluster-8",
+            "title": "Second Digg cluster on ai evals",
+            "candidate_ids": [
+              "https://di.gg/ai/mock2def-ai-evals"
+            ],
+            "representative_ids": [
+              "https://di.gg/ai/mock2def-ai-evals"
+            ],
+            "sources": [
+              "digg"
+            ],
+            "score": 42.087543424317616
+          },
+          {
+            "cluster_id": "cluster-10",
+            "title": "ai evals article",
+            "candidate_ids": [
+              "https://example.com/article/ai-evals"
+            ],
+            "representative_ids": [
+              "https://example.com/article/ai-evals"
+            ],
+            "sources": [
+              "grounding"
+            ],
+            "score": 38.698814627994956
+          },
+          {
+            "cluster_id": "cluster-11",
+            "title": "A Survey of ai evals",
+            "candidate_ids": [
+              "https://arxiv.org/abs/2606.00001v1-ai-evals"
+            ],
+            "representative_ids": [
+              "https://arxiv.org/abs/2606.00001v1-ai-evals"
+            ],
+            "sources": [
+              "arxiv"
+            ],
+            "score": 38.558814627994956
+          },
+          {
+            "cluster_id": "cluster-13",
+            "title": "Deep dive: ai evals from a paid newsletter",
+            "candidate_ids": [
+              "https://newsletter.example.com/deep-dive-ai-evals"
+            ],
+            "representative_ids": [
+              "https://newsletter.example.com/deep-dive-ai-evals"
+            ],
+            "sources": [
+              "dripstack"
+            ],
+            "score": 35.39881462799495
+          },
+          {
+            "cluster_id": "cluster-14",
+            "title": "Security Platform Engineer",
+            "candidate_ids": [
+              "https://boards.greenhouse.io/example/jobs/ai-evals-2"
+            ],
+            "representative_ids": [
+              "https://boards.greenhouse.io/example/jobs/ai-evals-2"
+            ],
+            "sources": [
+              "jobs"
+            ],
+            "score": 16.79754342431762
+          }
+        ],
+        "ranked_candidates": [
+          {
+            "candidate_id": "https://amazon.com/dp/B0MOCK00X2",
+            "item_id": "B0MOCK00X2",
+            "source": "amazon",
+            "title": "ai evals Classic | Everyday Model - 4.7/5 (8,446 ratings)",
+            "url": "https://www.amazon.com/dp/B0MOCK00X2",
+            "snippet": "Third one we've bought. They last.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:amazon": 1
+            },
+            "local_relevance": 0.8,
+            "freshness": 100,
+            "engagement": 79,
+            "source_quality": 0.8,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "amazon"
+            ],
+            "source_items": [
+              {
+                "item_id": "B0MOCK00X2",
+                "source": "amazon",
+                "title": "ai evals Classic | Everyday Model - 4.7/5 (8,446 ratings)",
+                "body": "ai evals Classic | Everyday Model - 4.7/5 (8,446 ratings)\nThird one we've bought. They last.",
+                "url": "https://www.amazon.com/dp/B0MOCK00X2",
+                "author": "Ai",
+                "container": "Amazon",
+                "published_at": "2026-11-26",
+                "date_confidence": "high",
+                "engagement": {
+                  "ratings": 8446
+                },
+                "relevance_hint": 0.8,
+                "why_relevant": "Mock Amazon product",
+                "snippet": "Third one we've bought. They last.",
+                "metadata": {
+                  "asin": "B0MOCK00X2",
+                  "name": "ai evals Classic | Everyday Model",
+                  "short_name": "Classic",
+                  "brand": "Ai",
+                  "rating": 4.7,
+                  "num_ratings": 8446,
+                  "price": 24.99,
+                  "currency": "USD",
+                  "badge": "",
+                  "sponsored": false,
+                  "top_comments": [
+                    {
+                      "score": 12,
+                      "rating": 5,
+                      "verified": true,
+                      "date": "2026-11-26",
+                      "excerpt": "Third one we've bought. They last.",
+                      "title": "Repeat buyer"
+                    }
+                  ],
+                  "reviews_attempted": false,
+                  "product_rating": 4.7,
+                  "product_rating_count": 8446,
+                  "star_distribution": {
+                    "one_star": 120,
+                    "two_star": 90,
+                    "three_star": 300,
+                    "four_star": 1010,
+                    "five_star": 6926
+                  },
+                  "grounding_exempt": true
+                },
+                "local_relevance": 0.8,
+                "freshness": 100,
+                "engagement_score": 79,
+                "source_quality": 0.8,
+                "local_rank_score": 0.849
+              }
+            ],
+            "rerank_score": 64.0,
+            "final_score": 64.32881462799496,
+            "explanation": "fallback-local-score (grounding-exempt source)",
+            "fun_score": 24.449733460323877,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-1",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "amazon",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "B0MOCK00X2"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://amazon.com/dp/B0MOCK00X1",
+            "item_id": "B0MOCK00X1",
+            "source": "amazon",
+            "title": "ai evals Pro Model | Flagship Edition - 4.4/5 (459 ratings)",
+            "url": "https://www.amazon.com/dp/B0MOCK00X1",
+            "snippet": "The tray shifts in transit and the lid jams shut. Solid build, but arrived with a dented panel. Keeps everything cold through a full school day.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:amazon": 2
+            },
+            "local_relevance": 0.8,
+            "freshness": 100,
+            "engagement": 53,
+            "source_quality": 0.8,
+            "rrf_score": 0.00031017369727047146,
+            "sources": [
+              "amazon"
+            ],
+            "source_items": [
+              {
+                "item_id": "B0MOCK00X1",
+                "source": "amazon",
+                "title": "ai evals Pro Model | Flagship Edition - 4.4/5 (459 ratings)",
+                "body": "ai evals Pro Model | Flagship Edition - 4.4/5 (459 ratings)\nThe tray shifts in transit and the lid jams shut. Solid build, but arrived with a dented panel. Keeps everything cold through a full school day.",
+                "url": "https://www.amazon.com/dp/B0MOCK00X1",
+                "author": "Ai",
+                "container": "Amazon",
+                "published_at": "2026-11-26",
+                "date_confidence": "high",
+                "engagement": {
+                  "ratings": 459
+                },
+                "relevance_hint": 0.85,
+                "why_relevant": "Mock Amazon product",
+                "snippet": "The tray shifts in transit and the lid jams shut. Solid build, but arrived with a dented panel. Keeps everything cold through a full school day.",
+                "metadata": {
+                  "asin": "B0MOCK00X1",
+                  "name": "ai evals Pro Model | Flagship Edition",
+                  "short_name": "Pro Model",
+                  "brand": "Ai",
+                  "rating": 4.4,
+                  "num_ratings": 459,
+                  "price": 39.99,
+                  "currency": "USD",
+                  "badge": "Best Seller",
+                  "sponsored": false,
+                  "top_comments": [
+                    {
+                      "score": 3,
+                      "rating": 2,
+                      "verified": true,
+                      "date": "2026-11-26",
+                      "excerpt": "The tray shifts in transit and the lid jams shut.",
+                      "title": "Lid jams"
+                    },
+                    {
+                      "score": 1,
+                      "rating": 4,
+                      "verified": true,
+                      "date": "2026-11-26",
+                      "excerpt": "Solid build, but arrived with a dented panel.",
+                      "title": "Shipping dent"
+                    },
+                    {
+                      "score": 0,
+                      "rating": 5,
+                      "verified": true,
+                      "date": "2026-11-26",
+                      "excerpt": "Keeps everything cold through a full school day.",
+                      "title": "Works great"
+                    },
+                    {
+                      "score": 0,
+                      "rating": 4,
+                      "verified": true,
+                      "date": "2026-11-26",
+                      "excerpt": "Good size for the price.",
+                      "title": "Good value"
+                    },
+                    {
+                      "score": 0,
+                      "rating": 4,
+                      "verified": false,
+                      "date": "2026-11-26",
+                      "excerpt": "Does the job, nothing fancy.",
+                      "title": "Fine"
+                    }
+                  ],
+                  "reviews_attempted": false,
+                  "product_rating": 4.4,
+                  "product_rating_count": 459,
+                  "star_distribution": {
+                    "one_star": 28,
+                    "two_star": 9,
+                    "three_star": 28,
+                    "four_star": 60,
+                    "five_star": 335
+                  },
+                  "grounding_exempt": true
+                },
+                "local_relevance": 0.8,
+                "freshness": 100,
+                "engagement_score": 53,
+                "source_quality": 0.8,
+                "local_rank_score": 0.8230000000000001
+              }
+            ],
+            "rerank_score": 64.0,
+            "final_score": 60.42754342431762,
+            "explanation": "fallback-local-score (grounding-exempt source)",
+            "fun_score": 7.29628611115732,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-2",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "amazon",
+                  "subquery_label": "primary",
+                  "native_rank": 2,
+                  "item_id": "B0MOCK00X1"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://amazon.com/dp/B0MOCK00X3",
+            "item_id": "B0MOCK00X3",
+            "source": "amazon",
+            "title": "ai evals Mini | New Release - (57 ratings)",
+            "url": "https://www.amazon.com/dp/B0MOCK00X3",
+            "snippet": "ai evals Mini | New Release - (57 ratings)",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:amazon": 3
+            },
+            "local_relevance": 0.8,
+            "freshness": 100,
+            "engagement": 35,
+            "source_quality": 0.8,
+            "rrf_score": 0.00030525030525030525,
+            "sources": [
+              "amazon"
+            ],
+            "source_items": [
+              {
+                "item_id": "B0MOCK00X3",
+                "source": "amazon",
+                "title": "ai evals Mini | New Release - (57 ratings)",
+                "body": "ai evals Mini | New Release - (57 ratings)",
+                "url": "https://www.amazon.com/dp/B0MOCK00X3",
+                "author": "Ai",
+                "container": "Amazon",
+                "published_at": "2026-11-26",
+                "date_confidence": "high",
+                "engagement": {
+                  "ratings": 57
+                },
+                "relevance_hint": 0.72,
+                "why_relevant": "Mock Amazon product",
+                "snippet": "ai evals Mini | New Release - (57 ratings)",
+                "metadata": {
+                  "asin": "B0MOCK00X3",
+                  "name": "ai evals Mini | New Release",
+                  "short_name": "Mini",
+                  "brand": "Ai",
+                  "num_ratings": 57,
+                  "price": 19.99,
+                  "currency": "USD",
+                  "badge": "",
+                  "sponsored": false,
+                  "top_comments": [],
+                  "reviews_attempted": false,
+                  "product_rating_count": 0,
+                  "star_distribution": {},
+                  "grounding_exempt": true
+                },
+                "local_relevance": 0.8,
+                "freshness": 100,
+                "engagement_score": 35,
+                "source_quality": 0.8,
+                "local_rank_score": 0.805
+              }
+            ],
+            "rerank_score": 64.0,
+            "final_score": 57.72631257631257,
+            "explanation": "fallback-local-score (grounding-exempt source)",
+            "fun_score": 17.25,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-3",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "amazon",
+                  "subquery_label": "primary",
+                  "native_rank": 3,
+                  "item_id": "B0MOCK00X3"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://di.gg/ai/mock1abc-ai-evals",
+            "item_id": "mock1abc",
+            "source": "digg",
+            "title": "Digg cluster about ai evals",
+            "url": "https://di.gg/ai/mock1abc-ai-evals",
+            "snippet": "Curated cluster summarizing recent ai evals discussion across the AI 1000.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:digg": 1
+            },
+            "local_relevance": 0.52,
+            "freshness": 94,
+            "engagement": 45,
+            "source_quality": 0.85,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "digg"
+            ],
+            "source_items": [
+              {
+                "item_id": "mock1abc",
+                "source": "digg",
+                "title": "Digg cluster about ai evals",
+                "body": "Digg cluster about ai evals\n\nCurated cluster summarizing recent ai evals discussion across the AI 1000.",
+                "url": "https://di.gg/ai/mock1abc-ai-evals",
+                "container": "Digg",
+                "published_at": "2026-11-23",
+                "date_confidence": "high",
+                "engagement": {
+                  "postCount": 8,
+                  "uniqueAuthors": 5,
+                  "rank": 2,
+                  "rank_score": 49.0
+                },
+                "relevance_hint": 0.84,
+                "why_relevant": "Mock Digg cluster",
+                "snippet": "Curated cluster summarizing recent ai evals discussion across the AI 1000.",
+                "metadata": {
+                  "clusterUrlId": "mock1abc",
+                  "tldr": "Curated cluster summarizing recent ai evals discussion across the AI 1000.",
+                  "rank": 2,
+                  "uniqueAuthors": 5,
+                  "postCount": 8,
+                  "firstPostAge": "3d",
+                  "posts": [
+                    {
+                      "username": "exampledev",
+                      "display_name": "Example Dev",
+                      "category": "Engineer",
+                      "rank": 142,
+                      "body": "Quote from the AI 1000 about ai evals.",
+                      "post_type": "tweet",
+                      "x_url": "https://x.com/exampledev/status/1",
+                      "posted_at": "2026-11-23"
+                    }
+                  ]
+                },
+                "local_relevance": 0.52,
+                "freshness": 94,
+                "engagement_score": 45,
+                "source_quality": 0.85,
+                "local_rank_score": 0.618
+              }
+            ],
+            "rerank_score": 44.9,
+            "final_score": 47.418814627994955,
+            "explanation": "fallback-local-score",
+            "fun_score": 14.7,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-4",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "digg",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "mock1abc"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://trustpilot.com/review/ai-evals.example.com",
+            "item_id": "example.com",
+            "source": "trustpilot",
+            "title": "ai evals: TrustScore 3.4",
+            "url": "https://www.trustpilot.com/review/ai-evals.example.com",
+            "snippet": "Across recent reviews, customers were split on ai evals: some praised support, others cited delays.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:trustpilot": 1
+            },
+            "local_relevance": 0.51,
+            "freshness": 97,
+            "engagement": 42,
+            "source_quality": 0.78,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "trustpilot"
+            ],
+            "source_items": [
+              {
+                "item_id": "example.com",
+                "source": "trustpilot",
+                "title": "ai evals: TrustScore 3.4",
+                "body": "ai evals: TrustScore 3.4\n\nAcross recent reviews, customers were split on ai evals: some praised support, others cited delays.",
+                "url": "https://www.trustpilot.com/review/ai-evals.example.com",
+                "author": "ai evals",
+                "container": "Trustpilot",
+                "published_at": "2026-11-25",
+                "date_confidence": "high",
+                "engagement": {
+                  "reviews": 128,
+                  "trustScore": 3.4
+                },
+                "relevance_hint": 0.8,
+                "why_relevant": "Mock Trustpilot sentiment",
+                "snippet": "Across recent reviews, customers were split on ai evals: some praised support, others cited delays.",
+                "metadata": {
+                  "name": "ai evals",
+                  "trustScore": 3.4,
+                  "reviewCount": 128,
+                  "aiSummary": "Across recent reviews, customers were split on ai evals: some praised support, others cited delays."
+                },
+                "local_relevance": 0.51,
+                "freshness": 97,
+                "engagement_score": 42,
+                "source_quality": 0.78,
+                "local_rank_score": 0.6160000000000001
+              }
+            ],
+            "rerank_score": 43.5,
+            "final_score": 46.07881462799495,
+            "explanation": "fallback-local-score",
+            "fun_score": 11.4,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-5",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "trustpilot",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "example.com"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://x.com/example/status/ai-evals-1",
+            "item_id": "X1",
+            "source": "x",
+            "title": "People on X are discussing ai evals right now.",
+            "url": "https://x.com/example/status/ai-evals-1",
+            "snippet": "People on X are discussing ai evals right now.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:x": 1
+            },
+            "local_relevance": 0.49,
+            "freshness": 95,
+            "engagement": 47,
+            "source_quality": 0.68,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "x"
+            ],
+            "source_items": [
+              {
+                "item_id": "X1",
+                "source": "x",
+                "title": "People on X are discussing ai evals right now.",
+                "body": "People on X are discussing ai evals right now.",
+                "url": "https://x.com/example/status/ai-evals-1",
+                "author": "example",
+                "published_at": "2026-11-24",
+                "date_confidence": "high",
+                "engagement": {
+                  "likes": 200,
+                  "reposts": 35,
+                  "replies": 18,
+                  "quotes": 4
+                },
+                "relevance_hint": 0.79,
+                "why_relevant": "Mock X result",
+                "snippet": "People on X are discussing ai evals right now.",
+                "metadata": {},
+                "local_relevance": 0.49,
+                "freshness": 95,
+                "engagement_score": 47,
+                "source_quality": 0.68,
+                "local_rank_score": 0.6030000000000001
+              }
+            ],
+            "rerank_score": 41.099999999999994,
+            "final_score": 44.68881462799495,
+            "explanation": "fallback-local-score",
+            "fun_score": 16.05,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-6",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "x",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "X1"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://reddit.com/r/example/comments/ai-evals-1",
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "ai evals discussion thread",
+            "url": "https://reddit.com/r/example/comments/ai-evals-1",
+            "snippet": "Strong firsthand feedback from ai evals users.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:reddit": 1
+            },
+            "local_relevance": 0.46,
+            "freshness": 89,
+            "engagement": 55,
+            "source_quality": 0.6,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "reddit"
+            ],
+            "source_items": [
+              {
+                "item_id": "R1",
+                "source": "reddit",
+                "title": "ai evals discussion thread",
+                "body": "ai evals discussion thread\nCommunity discussion about ai evals.\nStrong firsthand feedback from ai evals users.",
+                "url": "https://reddit.com/r/example/comments/ai-evals-1",
+                "container": "example",
+                "published_at": "2026-11-21",
+                "date_confidence": "high",
+                "engagement": {
+                  "score": 120,
+                  "num_comments": 48,
+                  "upvote_ratio": 0.91
+                },
+                "relevance_hint": 0.82,
+                "why_relevant": "Mock Reddit result",
+                "snippet": "Strong firsthand feedback from ai evals users.",
+                "metadata": {
+                  "top_comments": [
+                    {
+                      "excerpt": "Strong firsthand feedback from ai evals users."
+                    }
+                  ],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.46,
+                "freshness": 89,
+                "engagement_score": 55,
+                "source_quality": 0.6,
+                "local_rank_score": 0.5765000000000001
+              }
+            ],
+            "rerank_score": 38.199999999999996,
+            "final_score": 43.14881462799495,
+            "explanation": "fallback-local-score",
+            "fun_score": 12.0,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-7",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "reddit",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "R1"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://di.gg/ai/mock2def-ai-evals",
+            "item_id": "mock2def",
+            "source": "digg",
+            "title": "Second Digg cluster on ai evals",
+            "url": "https://di.gg/ai/mock2def-ai-evals",
+            "snippet": "Another angle on ai evals.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:digg": 2
+            },
+            "local_relevance": 0.48,
+            "freshness": 83,
+            "engagement": 28,
+            "source_quality": 0.85,
+            "rrf_score": 0.00031017369727047146,
+            "sources": [
+              "digg"
+            ],
+            "source_items": [
+              {
+                "item_id": "mock2def",
+                "source": "digg",
+                "title": "Second Digg cluster on ai evals",
+                "body": "Second Digg cluster on ai evals\n\nAnother angle on ai evals.",
+                "url": "https://di.gg/ai/mock2def-ai-evals",
+                "container": "Digg",
+                "published_at": "2026-11-18",
+                "date_confidence": "high",
+                "engagement": {
+                  "postCount": 3,
+                  "uniqueAuthors": 2,
+                  "rank": 18,
+                  "rank_score": 33.0
+                },
+                "relevance_hint": 0.71,
+                "why_relevant": "Mock Digg cluster",
+                "snippet": "Another angle on ai evals.",
+                "metadata": {
+                  "clusterUrlId": "mock2def",
+                  "tldr": "Another angle on ai evals.",
+                  "rank": 18,
+                  "uniqueAuthors": 2,
+                  "postCount": 3,
+                  "firstPostAge": "8d",
+                  "posts": []
+                },
+                "local_relevance": 0.48,
+                "freshness": 83,
+                "engagement_score": 28,
+                "source_quality": 0.85,
+                "local_rank_score": 0.5475
+              }
+            ],
+            "rerank_score": 42.099999999999994,
+            "final_score": 42.087543424317616,
+            "explanation": "fallback-local-score",
+            "fun_score": 21.299999999999997,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-8",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "digg",
+                  "subquery_label": "primary",
+                  "native_rank": 2,
+                  "item_id": "mock2def"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://techmeme.com/260627/p1-ai-evals",
+            "item_id": "https://www.techmeme.com/260627/p1-ai-evals",
+            "source": "techmeme",
+            "title": "Major development in ai evals reshapes the industry",
+            "url": "https://www.techmeme.com/260627/p1-ai-evals",
+            "snippet": "Major development in ai evals reshapes the industry",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:techmeme": 1
+            },
+            "local_relevance": 0.49,
+            "freshness": 97,
+            "source_quality": 0.85,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "techmeme"
+            ],
+            "source_items": [
+              {
+                "item_id": "https://www.techmeme.com/260627/p1-ai-evals",
+                "source": "techmeme",
+                "title": "Major development in ai evals reshapes the industry",
+                "body": "Major development in ai evals reshapes the industry",
+                "url": "https://www.techmeme.com/260627/p1-ai-evals",
+                "author": "techcrunch.com",
+                "container": "techcrunch.com",
+                "published_at": "2026-11-25",
+                "date_confidence": "high",
+                "engagement": {},
+                "relevance_hint": 0.83,
+                "why_relevant": "Mock Techmeme headline",
+                "snippet": "Major development in ai evals reshapes the industry",
+                "metadata": {
+                  "publication": "techcrunch.com"
+                },
+                "local_relevance": 0.49,
+                "freshness": 97,
+                "source_quality": 0.85,
+                "local_rank_score": 0.5609999999999999
+              }
+            ],
+            "rerank_score": 42.8,
+            "final_score": 39.708814627994954,
+            "explanation": "fallback-local-score",
+            "fun_score": 14.549999999999999,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-9",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "techmeme",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "https://www.techmeme.com/260627/p1-ai-evals"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://example.com/article/ai-evals",
+            "item_id": "WB1",
+            "source": "grounding",
+            "title": "ai evals article",
+            "url": "https://example.com/article/ai-evals",
+            "snippet": "Recent web reporting about ai evals.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:grounding": 1
+            },
+            "local_relevance": 0.56,
+            "freshness": 85,
+            "source_quality": 0.6,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "grounding"
+            ],
+            "source_items": [
+              {
+                "item_id": "WB1",
+                "source": "grounding",
+                "title": "ai evals article",
+                "body": "ai evals article\nRecent web reporting about ai evals.",
+                "url": "https://example.com/article/ai-evals",
+                "container": "example.com",
+                "published_at": "2026-11-19",
+                "date_confidence": "high",
+                "engagement": {},
+                "relevance_hint": 0.88,
+                "why_relevant": "Brave web search",
+                "snippet": "Recent web reporting about ai evals.",
+                "metadata": {},
+                "local_relevance": 0.56,
+                "freshness": 85,
+                "source_quality": 0.6,
+                "local_rank_score": 0.5765
+              }
+            ],
+            "rerank_score": 45.2,
+            "final_score": 38.698814627994956,
+            "explanation": "fallback-local-score",
+            "fun_score": 22.05,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-10",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "grounding",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "WB1"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://arxiv.org/abs/2606.00001v1-ai-evals",
+            "item_id": "http://arxiv.org/abs/2606.00001v1-ai-evals",
+            "source": "arxiv",
+            "title": "A Survey of ai evals",
+            "url": "https://arxiv.org/abs/2606.00001v1-ai-evals",
+            "snippet": "We present a comprehensive study of ai evals and its recent advances.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:arxiv": 1
+            },
+            "local_relevance": 0.54,
+            "freshness": 59,
+            "source_quality": 0.9,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "arxiv"
+            ],
+            "source_items": [
+              {
+                "item_id": "http://arxiv.org/abs/2606.00001v1-ai-evals",
+                "source": "arxiv",
+                "title": "A Survey of ai evals",
+                "body": "A Survey of ai evals\n\nWe present a comprehensive study of ai evals and its recent advances.",
+                "url": "https://arxiv.org/abs/2606.00001v1-ai-evals",
+                "author": "Ada Lovelace et al.",
+                "container": "arXiv",
+                "published_at": "2026-11-06",
+                "date_confidence": "high",
+                "engagement": {},
+                "relevance_hint": 0.86,
+                "why_relevant": "Mock arXiv paper",
+                "snippet": "We present a comprehensive study of ai evals and its recent advances.",
+                "metadata": {
+                  "authors": [
+                    "Ada Lovelace",
+                    "Alan Turing"
+                  ],
+                  "summary": "We present a comprehensive study of ai evals and its recent advances."
+                },
+                "local_relevance": 0.54,
+                "freshness": 59,
+                "source_quality": 0.9,
+                "local_rank_score": 0.49850000000000005
+              }
+            ],
+            "rerank_score": 46.8,
+            "final_score": 38.558814627994956,
+            "explanation": "fallback-local-score",
+            "fun_score": 16.5,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-11",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "arxiv",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "http://arxiv.org/abs/2606.00001v1-ai-evals"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://boards.greenhouse.io/example/jobs/ai-evals-1",
+            "item_id": "J1",
+            "source": "jobs",
+            "title": "Founding Enterprise Solutions Engineer",
+            "url": "https://boards.greenhouse.io/example/jobs/ai-evals-1",
+            "snippet": "Work with enterprise customers on SSO, SOC 2, security, and procurement workflows for ai evals.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:jobs": 1
+            },
+            "local_relevance": 0.44,
+            "freshness": 91,
+            "source_quality": 0.72,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "jobs"
+            ],
+            "source_items": [
+              {
+                "item_id": "J1",
+                "source": "jobs",
+                "title": "Founding Enterprise Solutions Engineer",
+                "body": "Founding Enterprise Solutions Engineer\nSales\nSan Francisco, CA\nWork with enterprise customers on SSO, SOC 2, security, and procurement workflows for ai evals.",
+                "url": "https://boards.greenhouse.io/example/jobs/ai-evals-1",
+                "author": "mock",
+                "container": "Sales",
+                "published_at": "2026-11-22",
+                "date_confidence": "high",
+                "engagement": {
+                  "open_roles": 1
+                },
+                "relevance_hint": 0.8,
+                "why_relevant": "Mock public job posting",
+                "snippet": "Work with enterprise customers on SSO, SOC 2, security, and procurement workflows for ai evals.",
+                "metadata": {
+                  "provider": "mock",
+                  "department": "Sales",
+                  "departments": [
+                    "Sales"
+                  ],
+                  "location": "San Francisco, CA",
+                  "offices": [],
+                  "board_token": "",
+                  "source_url": "",
+                  "source_domain": "boards.greenhouse.io"
+                },
+                "local_relevance": 0.44,
+                "freshness": 91,
+                "source_quality": 0.72,
+                "local_rank_score": 0.5135000000000001
+              }
+            ],
+            "rerank_score": 38.0,
+            "final_score": 35.57881462799496,
+            "explanation": "fallback-local-score",
+            "fun_score": 9.9,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-12",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "jobs",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "J1"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://newsletter.example.com/deep-dive-ai-evals",
+            "item_id": "DS1",
+            "source": "dripstack",
+            "title": "Deep dive: ai evals from a paid newsletter",
+            "url": "https://newsletter.example.com/deep-dive-ai-evals",
+            "snippet": "Professional analyst coverage of ai evals.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:dripstack": 1
+            },
+            "local_relevance": 0.46,
+            "freshness": 94,
+            "source_quality": 0.6,
+            "rrf_score": 0.00031525851197982345,
+            "sources": [
+              "dripstack"
+            ],
+            "source_items": [
+              {
+                "item_id": "DS1",
+                "source": "dripstack",
+                "title": "Deep dive: ai evals from a paid newsletter",
+                "body": "Professional analyst coverage of ai evals.",
+                "url": "https://newsletter.example.com/deep-dive-ai-evals",
+                "author": "newsletter.example.com",
+                "container": "newsletter.example.com",
+                "published_at": "2026-11-23",
+                "date_confidence": "high",
+                "engagement": {},
+                "relevance_hint": 0.85,
+                "why_relevant": "Mock DripStack newsletter result",
+                "snippet": "Professional analyst coverage of ai evals.",
+                "metadata": {
+                  "publication_slug": "newsletter.example.com",
+                  "post_slug": "deep-dive",
+                  "relevance_score": 85,
+                  "match_confidence": "strong"
+                },
+                "local_relevance": 0.46,
+                "freshness": 94,
+                "source_quality": 0.6,
+                "local_rank_score": 0.534
+              }
+            ],
+            "rerank_score": 38.199999999999996,
+            "final_score": 35.39881462799495,
+            "explanation": "fallback-local-score",
+            "fun_score": 17.25,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-13",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "dripstack",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "DS1"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://boards.greenhouse.io/example/jobs/ai-evals-2",
+            "item_id": "J2",
+            "source": "jobs",
+            "title": "Security Platform Engineer",
+            "url": "https://boards.greenhouse.io/example/jobs/ai-evals-2",
+            "snippet": "Build enterprise security, audit, and admin workflows.",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:jobs": 2
+            },
+            "local_relevance": 0.0,
+            "freshness": 88,
+            "source_quality": 0.72,
+            "rrf_score": 0.00031017369727047146,
+            "sources": [
+              "jobs"
+            ],
+            "source_items": [
+              {
+                "item_id": "J2",
+                "source": "jobs",
+                "title": "Security Platform Engineer",
+                "body": "Security Platform Engineer\nEngineering\nRemote\nBuild enterprise security, audit, and admin workflows.",
+                "url": "https://boards.greenhouse.io/example/jobs/ai-evals-2",
+                "author": "mock",
+                "container": "Engineering",
+                "published_at": "2026-11-20",
+                "date_confidence": "high",
+                "engagement": {
+                  "open_roles": 1
+                },
+                "relevance_hint": 0.78,
+                "why_relevant": "Mock public job posting",
+                "snippet": "Build enterprise security, audit, and admin workflows.",
+                "metadata": {
+                  "provider": "mock",
+                  "department": "Engineering",
+                  "departments": [
+                    "Engineering"
+                  ],
+                  "location": "Remote",
+                  "offices": [],
+                  "board_token": "",
+                  "source_url": "",
+                  "source_domain": "boards.greenhouse.io"
+                },
+                "local_relevance": 0.0,
+                "freshness": 88,
+                "source_quality": 0.72,
+                "local_rank_score": 0.22
+              }
+            ],
+            "rerank_score": 7.2,
+            "final_score": 16.79754342431762,
+            "explanation": "fallback-local-score",
+            "fun_score": 17.849999999999998,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-14",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "jobs",
+                  "subquery_label": "primary",
+                  "native_rank": 2,
+                  "item_id": "J2"
+                }
+              ],
+              "range_from": "2026-10-27",
+              "range_to": "2026-11-26",
+              "rerank_provenance": "fallback"
+            }
+          }
+        ],
+        "items_by_source": {
+          "hackernews": [],
+          "threads": [],
+          "bluesky": [],
+          "techmeme": [
+            {
+              "item_id": "https://www.techmeme.com/260627/p1-ai-evals",
+              "source": "techmeme",
+              "title": "Major development in ai evals reshapes the industry",
+              "body": "Major development in ai evals reshapes the industry",
+              "url": "https://www.techmeme.com/260627/p1-ai-evals",
+              "author": "techcrunch.com",
+              "container": "techcrunch.com",
+              "published_at": "2026-11-25",
+              "date_confidence": "high",
+              "engagement": {},
+              "relevance_hint": 0.83,
+              "why_relevant": "Mock Techmeme headline",
+              "snippet": "Major development in ai evals reshapes the industry",
+              "metadata": {
+                "publication": "techcrunch.com"
+              },
+              "local_relevance": 0.49,
+              "freshness": 97,
+              "source_quality": 0.85,
+              "local_rank_score": 0.5609999999999999
+            }
+          ],
+          "truthsocial": [],
+          "pinterest": [],
+          "trustpilot": [
+            {
+              "item_id": "example.com",
+              "source": "trustpilot",
+              "title": "ai evals: TrustScore 3.4",
+              "body": "ai evals: TrustScore 3.4\n\nAcross recent reviews, customers were split on ai evals: some praised support, others cited delays.",
+              "url": "https://www.trustpilot.com/review/ai-evals.example.com",
+              "author": "ai evals",
+              "container": "Trustpilot",
+              "published_at": "2026-11-25",
+              "date_confidence": "high",
+              "engagement": {
+                "reviews": 128,
+                "trustScore": 3.4
+              },
+              "relevance_hint": 0.8,
+              "why_relevant": "Mock Trustpilot sentiment",
+              "snippet": "Across recent reviews, customers were split on ai evals: some praised support, others cited delays.",
+              "metadata": {
+                "name": "ai evals",
+                "trustScore": 3.4,
+                "reviewCount": 128,
+                "aiSummary": "Across recent reviews, customers were split on ai evals: some praised support, others cited delays."
+              },
+              "local_relevance": 0.51,
+              "freshness": 97,
+              "engagement_score": 42,
+              "source_quality": 0.78,
+              "local_rank_score": 0.6160000000000001
+            }
+          ],
+          "github": [],
+          "tiktok": [],
+          "reddit": [
+            {
+              "item_id": "R1",
+              "source": "reddit",
+              "title": "ai evals discussion thread",
+              "body": "ai evals discussion thread\nCommunity discussion about ai evals.\nStrong firsthand feedback from ai evals users.",
+              "url": "https://reddit.com/r/example/comments/ai-evals-1",
+              "container": "example",
+              "published_at": "2026-11-21",
+              "date_confidence": "high",
+              "engagement": {
+                "score": 120,
+                "num_comments": 48,
+                "upvote_ratio": 0.91
+              },
+              "relevance_hint": 0.82,
+              "why_relevant": "Mock Reddit result",
+              "snippet": "Strong firsthand feedback from ai evals users.",
+              "metadata": {
+                "top_comments": [
+                  {
+                    "excerpt": "Strong firsthand feedback from ai evals users."
+                  }
+                ],
+                "comment_insights": []
+              },
+              "local_relevance": 0.46,
+              "freshness": 89,
+              "engagement_score": 55,
+              "source_quality": 0.6,
+              "local_rank_score": 0.5765000000000001
+            }
+          ],
+          "digg": [
+            {
+              "item_id": "mock1abc",
+              "source": "digg",
+              "title": "Digg cluster about ai evals",
+              "body": "Digg cluster about ai evals\n\nCurated cluster summarizing recent ai evals discussion across the AI 1000.",
+              "url": "https://di.gg/ai/mock1abc-ai-evals",
+              "container": "Digg",
+              "published_at": "2026-11-23",
+              "date_confidence": "high",
+              "engagement": {
+                "postCount": 8,
+                "uniqueAuthors": 5,
+                "rank": 2,
+                "rank_score": 49.0
+              },
+              "relevance_hint": 0.84,
+              "why_relevant": "Mock Digg cluster",
+              "snippet": "Curated cluster summarizing recent ai evals discussion across the AI 1000.",
+              "metadata": {
+                "clusterUrlId": "mock1abc",
+                "tldr": "Curated cluster summarizing recent ai evals discussion across the AI 1000.",
+                "rank": 2,
+                "uniqueAuthors": 5,
+                "postCount": 8,
+                "firstPostAge": "3d",
+                "posts": [
+                  {
+                    "username": "exampledev",
+                    "display_name": "Example Dev",
+                    "category": "Engineer",
+                    "rank": 142,
+                    "body": "Quote from the AI 1000 about ai evals.",
+                    "post_type": "tweet",
+                    "x_url": "https://x.com/exampledev/status/1",
+                    "posted_at": "2026-11-23"
+                  }
+                ]
+              },
+              "local_relevance": 0.52,
+              "freshness": 94,
+              "engagement_score": 45,
+              "source_quality": 0.85,
+              "local_rank_score": 0.618
+            },
+            {
+              "item_id": "mock2def",
+              "source": "digg",
+              "title": "Second Digg cluster on ai evals",
+              "body": "Second Digg cluster on ai evals\n\nAnother angle on ai evals.",
+              "url": "https://di.gg/ai/mock2def-ai-evals",
+              "container": "Digg",
+              "published_at": "2026-11-18",
+              "date_confidence": "high",
+              "engagement": {
+                "postCount": 3,
+                "uniqueAuthors": 2,
+                "rank": 18,
+                "rank_score": 33.0
+              },
+              "relevance_hint": 0.71,
+              "why_relevant": "Mock Digg cluster",
+              "snippet": "Another angle on ai evals.",
+              "metadata": {
+                "clusterUrlId": "mock2def",
+                "tldr": "Another angle on ai evals.",
+                "rank": 18,
+                "uniqueAuthors": 2,
+                "postCount": 3,
+                "firstPostAge": "8d",
+                "posts": []
+              },
+              "local_relevance": 0.48,
+              "freshness": 83,
+              "engagement_score": 28,
+              "source_quality": 0.85,
+              "local_rank_score": 0.5475
+            }
+          ],
+          "instagram": [],
+          "grounding": [
+            {
+              "item_id": "WB1",
+              "source": "grounding",
+              "title": "ai evals article",
+              "body": "ai evals article\nRecent web reporting about ai evals.",
+              "url": "https://example.com/article/ai-evals",
+              "container": "example.com",
+              "published_at": "2026-11-19",
+              "date_confidence": "high",
+              "engagement": {},
+              "relevance_hint": 0.88,
+              "why_relevant": "Brave web search",
+              "snippet": "Recent web reporting about ai evals.",
+              "metadata": {},
+              "local_relevance": 0.56,
+              "freshness": 85,
+              "source_quality": 0.6,
+              "local_rank_score": 0.5765
+            }
+          ],
+          "xiaohongshu": [],
+          "amazon": [
+            {
+              "item_id": "B0MOCK00X2",
+              "source": "amazon",
+              "title": "ai evals Classic | Everyday Model - 4.7/5 (8,446 ratings)",
+              "body": "ai evals Classic | Everyday Model - 4.7/5 (8,446 ratings)\nThird one we've bought. They last.",
+              "url": "https://www.amazon.com/dp/B0MOCK00X2",
+              "author": "Ai",
+              "container": "Amazon",
+              "published_at": "2026-11-26",
+              "date_confidence": "high",
+              "engagement": {
+                "ratings": 8446
+              },
+              "relevance_hint": 0.8,
+              "why_relevant": "Mock Amazon product",
+              "snippet": "Third one we've bought. They last.",
+              "metadata": {
+                "asin": "B0MOCK00X2",
+                "name": "ai evals Classic | Everyday Model",
+                "short_name": "Classic",
+                "brand": "Ai",
+                "rating": 4.7,
+                "num_ratings": 8446,
+                "price": 24.99,
+                "currency": "USD",
+                "badge": "",
+                "sponsored": false,
+                "top_comments": [
+                  {
+                    "score": 12,
+                    "rating": 5,
+                    "verified": true,
+                    "date": "2026-11-26",
+                    "excerpt": "Third one we've bought. They last.",
+                    "title": "Repeat buyer"
+                  }
+                ],
+                "reviews_attempted": false,
+                "product_rating": 4.7,
+                "product_rating_count": 8446,
+                "star_distribution": {
+                  "one_star": 120,
+                  "two_star": 90,
+                  "three_star": 300,
+                  "four_star": 1010,
+                  "five_star": 6926
+                },
+                "grounding_exempt": true
+              },
+              "local_relevance": 0.8,
+              "freshness": 100,
+              "engagement_score": 79,
+              "source_quality": 0.8,
+              "local_rank_score": 0.849
+            },
+            {
+              "item_id": "B0MOCK00X1",
+              "source": "amazon",
+              "title": "ai evals Pro Model | Flagship Edition - 4.4/5 (459 ratings)",
+              "body": "ai evals Pro Model | Flagship Edition - 4.4/5 (459 ratings)\nThe tray shifts in transit and the lid jams shut. Solid build, but arrived with a dented panel. Keeps everything cold through a full school day.",
+              "url": "https://www.amazon.com/dp/B0MOCK00X1",
+              "author": "Ai",
+              "container": "Amazon",
+              "published_at": "2026-11-26",
+              "date_confidence": "high",
+              "engagement": {
+                "ratings": 459
+              },
+              "relevance_hint": 0.85,
+              "why_relevant": "Mock Amazon product",
+              "snippet": "The tray shifts in transit and the lid jams shut. Solid build, but arrived with a dented panel. Keeps everything cold through a full school day.",
+              "metadata": {
+                "asin": "B0MOCK00X1",
+                "name": "ai evals Pro Model | Flagship Edition",
+                "short_name": "Pro Model",
+                "brand": "Ai",
+                "rating": 4.4,
+                "num_ratings": 459,
+                "price": 39.99,
+                "currency": "USD",
+                "badge": "Best Seller",
+                "sponsored": false,
+                "top_comments": [
+                  {
+                    "score": 3,
+                    "rating": 2,
+                    "verified": true,
+                    "date": "2026-11-26",
+                    "excerpt": "The tray shifts in transit and the lid jams shut.",
+                    "title": "Lid jams"
+                  },
+                  {
+                    "score": 1,
+                    "rating": 4,
+                    "verified": true,
+                    "date": "2026-11-26",
+                    "excerpt": "Solid build, but arrived with a dented panel.",
+                    "title": "Shipping dent"
+                  },
+                  {
+                    "score": 0,
+                    "rating": 5,
+                    "verified": true,
+                    "date": "2026-11-26",
+                    "excerpt": "Keeps everything cold through a full school day.",
+                    "title": "Works great"
+                  },
+                  {
+                    "score": 0,
+                    "rating": 4,
+                    "verified": true,
+                    "date": "2026-11-26",
+                    "excerpt": "Good size for the price.",
+                    "title": "Good value"
+                  },
+                  {
+                    "score": 0,
+                    "rating": 4,
+                    "verified": false,
+                    "date": "2026-11-26",
+                    "excerpt": "Does the job, nothing fancy.",
+                    "title": "Fine"
+                  }
+                ],
+                "reviews_attempted": false,
+                "product_rating": 4.4,
+                "product_rating_count": 459,
+                "star_distribution": {
+                  "one_star": 28,
+                  "two_star": 9,
+                  "three_star": 28,
+                  "four_star": 60,
+                  "five_star": 335
+                },
+                "grounding_exempt": true
+              },
+              "local_relevance": 0.8,
+              "freshness": 100,
+              "engagement_score": 53,
+              "source_quality": 0.8,
+              "local_rank_score": 0.8230000000000001
+            },
+            {
+              "item_id": "B0MOCK00X3",
+              "source": "amazon",
+              "title": "ai evals Mini | New Release - (57 ratings)",
+              "body": "ai evals Mini | New Release - (57 ratings)",
+              "url": "https://www.amazon.com/dp/B0MOCK00X3",
+              "author": "Ai",
+              "container": "Amazon",
+              "published_at": "2026-11-26",
+              "date_confidence": "high",
+              "engagement": {
+                "ratings": 57
+              },
+              "relevance_hint": 0.72,
+              "why_relevant": "Mock Amazon product",
+              "snippet": "ai evals Mini | New Release - (57 ratings)",
+              "metadata": {
+                "asin": "B0MOCK00X3",
+                "name": "ai evals Mini | New Release",
+                "short_name": "Mini",
+                "brand": "Ai",
+                "num_ratings": 57,
+                "price": 19.99,
+                "currency": "USD",
+                "badge": "",
+                "sponsored": false,
+                "top_comments": [],
+                "reviews_attempted": false,
+                "product_rating_count": 0,
+                "star_distribution": {},
+                "grounding_exempt": true
+              },
+              "local_relevance": 0.8,
+              "freshness": 100,
+              "engagement_score": 35,
+              "source_quality": 0.8,
+              "local_rank_score": 0.805
+            }
+          ],
+          "x": [
+            {
+              "item_id": "X1",
+              "source": "x",
+              "title": "People on X are discussing ai evals right now.",
+              "body": "People on X are discussing ai evals right now.",
+              "url": "https://x.com/example/status/ai-evals-1",
+              "author": "example",
+              "published_at": "2026-11-24",
+              "date_confidence": "high",
+              "engagement": {
+                "likes": 200,
+                "reposts": 35,
+                "replies": 18,
+                "quotes": 4
+              },
+              "relevance_hint": 0.79,
+              "why_relevant": "Mock X result",
+              "snippet": "People on X are discussing ai evals right now.",
+              "metadata": {},
+              "local_relevance": 0.49,
+              "freshness": 95,
+              "engagement_score": 47,
+              "source_quality": 0.68,
+              "local_rank_score": 0.6030000000000001
+            }
+          ],
+          "youtube": [],
+          "arxiv": [
+            {
+              "item_id": "http://arxiv.org/abs/2606.00001v1-ai-evals",
+              "source": "arxiv",
+              "title": "A Survey of ai evals",
+              "body": "A Survey of ai evals\n\nWe present a comprehensive study of ai evals and its recent advances.",
+              "url": "https://arxiv.org/abs/2606.00001v1-ai-evals",
+              "author": "Ada Lovelace et al.",
+              "container": "arXiv",
+              "published_at": "2026-11-06",
+              "date_confidence": "high",
+              "engagement": {},
+              "relevance_hint": 0.86,
+              "why_relevant": "Mock arXiv paper",
+              "snippet": "We present a comprehensive study of ai evals and its recent advances.",
+              "metadata": {
+                "authors": [
+                  "Ada Lovelace",
+                  "Alan Turing"
+                ],
+                "summary": "We present a comprehensive study of ai evals and its recent advances."
+              },
+              "local_relevance": 0.54,
+              "freshness": 59,
+              "source_quality": 0.9,
+              "local_rank_score": 0.49850000000000005
+            }
+          ],
+          "devto": [],
+          "meta_ads": [],
+          "perplexity": [],
+          "telegram": [],
+          "linkedin": [],
+          "dripstack": [
+            {
+              "item_id": "DS1",
+              "source": "dripstack",
+              "title": "Deep dive: ai evals from a paid newsletter",
+              "body": "Professional analyst coverage of ai evals.",
+              "url": "https://newsletter.example.com/deep-dive-ai-evals",
+              "author": "newsletter.example.com",
+              "container": "newsletter.example.com",
+              "published_at": "2026-11-23",
+              "date_confidence": "high",
+              "engagement": {},
+              "relevance_hint": 0.85,
+              "why_relevant": "Mock DripStack newsletter result",
+              "snippet": "Professional analyst coverage of ai evals.",
+              "metadata": {
+                "publication_slug": "newsletter.example.com",
+                "post_slug": "deep-dive",
+                "relevance_score": 85,
+                "match_confidence": "strong"
+              },
+              "local_relevance": 0.46,
+              "freshness": 94,
+              "source_quality": 0.6,
+              "local_rank_score": 0.534
+            }
+          ],
+          "jobs": [
+            {
+              "item_id": "J1",
+              "source": "jobs",
+              "title": "Founding Enterprise Solutions Engineer",
+              "body": "Founding Enterprise Solutions Engineer\nSales\nSan Francisco, CA\nWork with enterprise customers on SSO, SOC 2, security, and procurement workflows for ai evals.",
+              "url": "https://boards.greenhouse.io/example/jobs/ai-evals-1",
+              "author": "mock",
+              "container": "Sales",
+              "published_at": "2026-11-22",
+              "date_confidence": "high",
+              "engagement": {
+                "open_roles": 1
+              },
+              "relevance_hint": 0.8,
+              "why_relevant": "Mock public job posting",
+              "snippet": "Work with enterprise customers on SSO, SOC 2, security, and procurement workflows for ai evals.",
+              "metadata": {
+                "provider": "mock",
+                "department": "Sales",
+                "departments": [
+                  "Sales"
+                ],
+                "location": "San Francisco, CA",
+                "offices": [],
+                "board_token": "",
+                "source_url": "",
+                "source_domain": "boards.greenhouse.io"
+              },
+              "local_relevance": 0.44,
+              "freshness": 91,
+              "source_quality": 0.72,
+              "local_rank_score": 0.5135000000000001
+            },
+            {
+              "item_id": "J2",
+              "source": "jobs",
+              "title": "Security Platform Engineer",
+              "body": "Security Platform Engineer\nEngineering\nRemote\nBuild enterprise security, audit, and admin workflows.",
+              "url": "https://boards.greenhouse.io/example/jobs/ai-evals-2",
+              "author": "mock",
+              "container": "Engineering",
+              "published_at": "2026-11-20",
+              "date_confidence": "high",
+              "engagement": {
+                "open_roles": 1
+              },
+              "relevance_hint": 0.78,
+              "why_relevant": "Mock public job posting",
+              "snippet": "Build enterprise security, audit, and admin workflows.",
+              "metadata": {
+                "provider": "mock",
+                "department": "Engineering",
+                "departments": [
+                  "Engineering"
+                ],
+                "location": "Remote",
+                "offices": [],
+                "board_token": "",
+                "source_url": "",
+                "source_domain": "boards.greenhouse.io"
+              },
+              "local_relevance": 0.0,
+              "freshness": 88,
+              "source_quality": 0.72,
+              "local_rank_score": 0.22
+            }
+          ]
+        },
+        "errors_by_source": {},
+        "source_status": {
+          "reddit": {
+            "source": "reddit",
+            "state": "ok",
+            "items_returned": 1,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.437707Z"
+          },
+          "x": {
+            "source": "x",
+            "state": "ok",
+            "items_returned": 1,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439062Z"
+          },
+          "youtube": {
+            "source": "youtube",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439106Z"
+          },
+          "tiktok": {
+            "source": "tiktok",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.437480Z"
+          },
+          "instagram": {
+            "source": "instagram",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.438215Z"
+          },
+          "hackernews": {
+            "source": "hackernews",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.436617Z"
+          },
+          "bluesky": {
+            "source": "bluesky",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.436861Z"
+          },
+          "truthsocial": {
+            "source": "truthsocial",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.437156Z"
+          },
+          "grounding": {
+            "source": "grounding",
+            "state": "ok",
+            "items_returned": 1,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.438351Z"
+          },
+          "xiaohongshu": {
+            "source": "xiaohongshu",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.438393Z"
+          },
+          "github": {
+            "source": "github",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.437445Z"
+          },
+          "threads": {
+            "source": "threads",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.436806Z"
+          },
+          "pinterest": {
+            "source": "pinterest",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.437197Z"
+          },
+          "digg": {
+            "source": "digg",
+            "state": "ok",
+            "items_returned": 2,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.438164Z"
+          },
+          "arxiv": {
+            "source": "arxiv",
+            "state": "ok",
+            "items_returned": 1,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439260Z"
+          },
+          "techmeme": {
+            "source": "techmeme",
+            "state": "ok",
+            "items_returned": 1,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.437095Z"
+          },
+          "trustpilot": {
+            "source": "trustpilot",
+            "state": "ok",
+            "items_returned": 1,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.437397Z"
+          },
+          "amazon": {
+            "source": "amazon",
+            "state": "ok",
+            "items_returned": 3,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.438891Z"
+          },
+          "meta_ads": {
+            "source": "meta_ads",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439362Z"
+          },
+          "jobs": {
+            "source": "jobs",
+            "state": "ok",
+            "items_returned": 2,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439797Z"
+          },
+          "linkedin": {
+            "source": "linkedin",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439458Z"
+          },
+          "dripstack": {
+            "source": "dripstack",
+            "state": "ok",
+            "items_returned": 1,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439595Z"
+          },
+          "telegram": {
+            "source": "telegram",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439429Z"
+          },
+          "devto": {
+            "source": "devto",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439327Z"
+          },
+          "perplexity": {
+            "source": "perplexity",
+            "state": "no-results",
+            "items_returned": 0,
+            "attempted": true,
+            "at": "2026-11-26T00:25:06.439397Z"
+          }
+        },
+        "freshness_verdicts": [],
+        "warnings": [],
+        "artifacts": {
+          "grounding": [
+            {
+              "label": "primary",
+              "mock": true,
+              "webSearchQueries": [
+                "ai evals"
+              ],
+              "resultCount": 1
+            }
+          ],
+          "plan_source": "deterministic",
+          "corpus_in_export": false,
+          "hiring_signals_mode": false,
+          "amazon_query": "AI evals",
+          "hiring_signals": {
+            "mode": "standard",
+            "company_size_tier": "startup",
+            "include": true,
+            "signals": [
+              {
+                "theme": "enterprise readiness",
+                "interpretation": "appears to be increasing focus on enterprise readiness",
+                "confidence": "high",
+                "confidence_score": 80,
+                "evidence_count": 2,
+                "departments": [
+                  "Sales",
+                  "Engineering"
+                ],
+                "senior_roles": [
+                  "Founding Enterprise Solutions Engineer"
+                ],
+                "evidence": [
+                  {
+                    "title": "Founding Enterprise Solutions Engineer",
+                    "url": "https://boards.greenhouse.io/example/jobs/ai-evals-1",
+                    "department": "Sales",
+                    "published_at": "2026-11-22"
+                  },
+                  {
+                    "title": "Security Platform Engineer",
+                    "url": "https://boards.greenhouse.io/example/jobs/ai-evals-2",
+                    "department": "Engineering",
+                    "published_at": "2026-11-20"
+                  }
+                ]
+              }
+            ],
+            "strategic_candidates": [
+              {
+                "title": "Founding Enterprise Solutions Engineer",
+                "url": "https://boards.greenhouse.io/example/jobs/ai-evals-1",
+                "department": "Sales",
+                "location": "san francisco, ca",
+                "published_at": "2026-11-22",
+                "flags": [
+                  "founding"
+                ]
+              }
+            ],
+            "omitted_reason": "",
+            "rejected_job_keys": []
+          },
+          "resolved": {
+            "entity": "AI evals",
+            "x_handle": "",
+            "subreddits": [],
+            "github_user": "",
+            "github_repos": [],
+            "trustpilot_domain": "",
+            "context": ""
+          }
+        },
+        "library_context": []
+      }
+    }
+  ]
+}
