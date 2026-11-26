@@ -6,6 +6,8 @@
 
 [site]
 title = "Pulse"
+# Where the site lives. Shown on the daily link-preview card.
+url = "https://news.chuka.io"
 # The date on each brief, and "today", are worked out in this timezone.
 timezone = "Europe/Berlin"
 # How many daily briefs to keep in the archive.

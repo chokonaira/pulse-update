@@ -72,23 +72,7 @@
   color-scheme: light;
 }
 
-/* Dark: follows the system, unless a host page pins a theme with data-theme. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #15132A;
-    --paper-raised: #1C1A36;
-    --ink: #ECEAF6;
-    --ink-soft: #A7A3C3;
-    --rule: #2E2B4C;
-    --focus: #B9A8FF;
-    --heat-0: #4C4680;
-    --heat-1: #7D5FDA;
-    --heat-2: #D64D9E;
-    --heat-3: #FF6B4A;
-    --heat-4: #FFB547;
-    color-scheme: dark;
-  }
-}
+/* Dark: only when the reader picks it with the theme button (light is the default). */
 :root[data-theme="dark"] {
   --paper: #15132A;
   --paper-raised: #1C1A36;
@@ -256,6 +240,7 @@ main {
 /* ------------------------------------------------------------ today */
 
 .hero { margin-bottom: 2.75rem; }
+.hero .meta { padding-right: 2.75rem; }
 .hero .page-title { font-size: 2rem; line-height: 1.15; }
 .hero .lede li { font-size: 1.0625rem; }
 
@@ -604,6 +589,37 @@ main {
 }
 .tabs a[aria-current="page"] { color: var(--ink); }
 .tabs a[aria-current="page"] svg { stroke: var(--heat-2); stroke-width: 2.2; }
+
+/* Theme switch: one quiet icon in the corner, moon for dark, sun for light. */
+.theme-toggle {
+  position: absolute;
+  top: calc(env(safe-area-inset-top) + 1.05rem);
+  right: max(calc(var(--gutter) - 0.6rem), calc((100% - var(--measure)) / 2 - 0.6rem));
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+.theme-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.theme-toggle:hover { color: var(--ink); }
+.theme-toggle:active { background: var(--rule); color: var(--ink); }
+.theme-toggle:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 
 .visually-hidden {
   position: absolute !important;

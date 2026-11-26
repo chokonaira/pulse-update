@@ -19,6 +19,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import card  # noqa: E402
 import config as config_mod  # noqa: E402
 import engine as engine_mod  # noqa: E402
 import evidence as ev  # noqa: E402
@@ -140,6 +141,12 @@ def main(argv: list[str] | None = None) -> int:
     }
     output.write_day(args.out, day, cfg.keep_days)
     print(f"\nSaved {args.out / 'days' / (today.isoformat() + '.json')}")
+    try:
+        host = cfg.url.split("://", 1)[-1] if cfg.url else ""
+        if card.render(day, args.out / "og.png", host):
+            print(f"Drew today's preview card at {args.out / 'og.png'}")
+    except Exception as exc:  # a missing card must never cost the day's brief
+        print(f"  [card] could not draw the preview card: {exc}")
     _step_summary(["## Pulse brief for " + today.isoformat(), "", f"**{overview['headline']}**", "",
                    "| Topic | Result | Time |", "|---|---|---|", *summary_rows])
     return 0

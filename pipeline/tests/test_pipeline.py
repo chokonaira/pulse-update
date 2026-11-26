@@ -13,6 +13,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
 
+import card  # noqa: E402
 import config  # noqa: E402
 import evidence as ev  # noqa: E402
 import output  # noqa: E402
@@ -241,6 +242,28 @@ class OutputTests(unittest.TestCase):
             self.assertEqual(index["latest"], "2026-11-26")
             self.assertEqual([d["date"] for d in index["days"]], ["2026-11-26", "2026-11-25"])
             self.assertFalse((out / "days" / "2025-01-01.json").exists())
+
+
+class CardTests(unittest.TestCase):
+    def test_combined_pulse_normalised(self):
+        day = {"topics": [{"pulse": [0, 1, 0.5]}, {"pulse": [0, 0.5, 1]}, {"pulse": [0, 0, 0]}]}
+        line = card.combined_pulse(day)
+        self.assertEqual(len(line), 3)
+        self.assertAlmostEqual(max(line), 1.0)
+
+    def test_render_card(self):
+        try:
+            import PIL  # noqa: F401
+        except ImportError:
+            self.skipTest("Pillow not installed")
+        import tempfile
+        from PIL import Image
+        day = {"date": "2026-11-26", "title": "Pulse", "overview": {"headline": "A headline " * 12},
+               "topics": [{"pulse": [i / 29 for i in range(30)]}]}
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "og.png"
+            self.assertTrue(card.render(day, out, "news.example.com"))
+            self.assertEqual(Image.open(out).size, (1200, 630))
 
 
 if __name__ == "__main__":

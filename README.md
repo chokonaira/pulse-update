@@ -60,8 +60,18 @@ To serve it at something like `news.example.com`:
    gh api -X PUT repos/<you>/<repo>/pages -F https_enforced=true
    ```
 
+Then change the `https://news.chuka.io/` addresses in `site/index.html` (canonical link and
+link-preview tags) to your domain.
+
 No CNAME file is needed, because the site is published by a workflow. To protect the
 domain from takeover, also verify it under your GitHub account's Settings > Pages.
+
+## Link previews
+
+Each morning the run also draws `site/data/og.png`: today's headline over the month's
+activity line. Sites like LinkedIn, X, WhatsApp and Slack show it when the link is
+shared. LinkedIn keeps a preview for about a week, so before posting, paste the link into
+LinkedIn's Post Inspector (linkedin.com/post-inspector) to fetch the fresh card.
 
 ## Choose your topics
 

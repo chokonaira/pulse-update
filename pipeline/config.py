@@ -30,6 +30,7 @@ class Topic:
 @dataclass
 class Config:
     title: str = "Pulse"
+    url: str = ""
     timezone: str = "Europe/Berlin"
     keep_days: int = 365
     model: str = "claude-sonnet-5-5"
@@ -72,6 +73,7 @@ def load(path: str | Path) -> Config:
 
     cfg = Config(
         title=str(site.get("title", "Pulse")),
+        url=str(site.get("url", "")).rstrip("/"),
         timezone=str(site.get("timezone", "Europe/Berlin")),
         keep_days=int(site.get("keep_days", 365)),
         model=str(synthesis.get("model", "claude-sonnet-5-5")),

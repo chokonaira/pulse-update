@@ -3,11 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Pulse</title>
-  <meta name="description" content="A daily briefing on what people are actually saying, built from the last 30 days of Reddit, Hacker News, X, YouTube and more.">
-  <meta name="theme-color" content="#F1F0F5" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#15132A" media="(prefers-color-scheme: dark)">
-  <meta name="color-scheme" content="light dark">
+  <title>Pulse: what people are saying about AI</title>
+  <meta name="description" content="What people are actually saying about AI, written up every morning from the last 30 days of Reddit, Hacker News, GitHub, arXiv and more.">
+  <link rel="canonical" href="https://news.chuka.io/">
+  <!-- Link previews (LinkedIn, X, WhatsApp, Slack, iMessage). Update the URLs if the domain changes. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pulse">
+  <meta property="og:title" content="Pulse: what people are saying about AI">
+  <meta property="og:description" content="What people are actually saying about AI, written up every morning from the last 30 days of Reddit, Hacker News, GitHub, arXiv and more.">
+  <meta property="og:url" content="https://news.chuka.io/">
+  <meta property="og:image" content="https://news.chuka.io/data/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Today's Pulse headline over the month's activity line.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pulse: what people are saying about AI">
+  <meta name="twitter:description" content="What people are actually saying about AI, written up every morning from the last 30 days of Reddit, Hacker News, GitHub, arXiv and more.">
+  <meta name="twitter:image" content="https://news.chuka.io/data/og.png">
+  <meta name="twitter:image:alt" content="Today's Pulse headline over the month's activity line.">
+  <meta name="theme-color" content="#F1F0F5">
+  <meta name="color-scheme" content="light">
   <meta name="robots" content="noindex">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
@@ -15,14 +30,17 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="preload" href="./fonts/literata-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./styles.css">
+  <script>try{if(localStorage.getItem("pulse-theme")==="dark"){document.documentElement.setAttribute("data-theme","dark");document.querySelector('meta[name="theme-color"]').content="#15132A";}}catch(e){}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to the brief</a>
   <div class="notice" id="notice" role="status" hidden></div>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"></button>
   <main id="main" tabindex="-1" aria-live="polite">
     <p class="loading">Loading today's brief</p>
   </main>

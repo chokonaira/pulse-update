@@ -480,9 +480,34 @@
 
   window.addEventListener("hashchange", render);
   document.addEventListener("visibilitychange", checkForNewBrief);
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => render());
-  new MutationObserver(() => render())
+  new MutationObserver(() => { syncThemeButton(); render(); })
     .observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  // Theme: light by default; the button switches to dark and remembers it.
+  const THEME_KEY = "pulse-theme";
+  const themeButton = document.getElementById("theme-toggle");
+  const isDark = () => document.documentElement.getAttribute("data-theme") === "dark";
+  const ICONS = {
+    moon: "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z",
+    sun: "M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4",
+  };
+
+  function syncThemeButton() {
+    const dark = isDark();
+    themeButton.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+    themeButton.replaceChildren(el("svg", { svg: true, viewBox: "0 0 24 24", "aria-hidden": "true" },
+      el("path", { svg: true, d: dark ? ICONS.sun : ICONS.moon })));
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", dark ? "#15132A" : "#F1F0F5");
+  }
+
+  themeButton.addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    if (next === "dark") document.documentElement.setAttribute("data-theme", "dark");
+    else document.documentElement.removeAttribute("data-theme");
+    try { localStorage.setItem(THEME_KEY, next); } catch { /* private mode: still switches for this visit */ }
+  });
+  syncThemeButton();
+
   if ("scrollRestoration" in history) history.scrollRestoration = "manual";
 
   if ("serviceWorker" in navigator && location.protocol !== "file:") {

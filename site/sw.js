@@ -1,7 +1,8 @@
-/* Offline support. The app shell is served from cache and refreshed in the
-   background; briefs are fetched fresh first and fall back to the last copy. */
+/* Offline support. The page and its files are served from cache and refreshed
+   in the background, so an update shows on the next open; briefs are fetched
+   fresh first and fall back to the last copy. */
 
-const CACHE = "pulse-v1";
+const CACHE = "pulse-v2";
 const SHELL = [
   "./",
   "./index.html",
@@ -57,7 +58,8 @@ self.addEventListener("fetch", (event) => {
   if (url.pathname.includes("/data/")) {
     event.respondWith(networkFirst(request));
   } else if (request.mode === "navigate") {
-    event.respondWith(networkFirst(request).catch(() => caches.match("./index.html")));
+    // Same strategy as the files, so the page and its scripts always match.
+    event.respondWith(staleWhileRevalidate(request).then((response) => response || caches.match("./index.html")));
   } else {
     event.respondWith(staleWhileRevalidate(request));
   }
