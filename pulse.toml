@@ -34,8 +34,9 @@ timeout_minutes = 12          # per topic
 
 [[topic]]
 name = "AI evals"
-query = "LLM evals"
+query = "LLM benchmarks"
 subreddits = ["MachineLearning", "LocalLLaMA"]
+github_repos = ["UKGovernmentBEIS/inspect_ai", "EleutherAI/lm-evaluation-harness"]
 
 [[topic]]
 name = "AI safety"

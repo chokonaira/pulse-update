@@ -351,9 +351,13 @@
     }
     if (topic.watch) parts.push(el("p", { class: "watch" }, el("strong", { text: "Worth watching" }), topic.watch));
     if (topic.coverage && topic.coverage.length) {
+      const ok = topic.coverage.filter((c) => c.state === "ok");
+      const missing = topic.coverage.filter((c) => c.state !== "ok")
+        .map((c) => (c.detail && c.detail !== "failed" ? `${c.label} (${c.detail})` : c.label));
       parts.push(el("h2", { class: "section-title", text: "Where this came from" }),
-        el("ul", { class: "coverage" }, topic.coverage.map((c) =>
-          el("li", { class: c.state }, el("span", { text: c.label }), el("span", { text: c.detail || "" })))));
+        ok.length ? el("ul", { class: "coverage" }, ok.map((c) =>
+          el("li", null, el("span", { text: c.label }), el("span", { text: c.detail || "" })))) : null,
+        missing.length ? el("p", { class: "note", text: `Not available this run: ${listWords(missing)}.` }) : null);
     }
     main.replaceChildren(el("div", { class: "topic-detail" }, ...parts));
     if (storyIndex !== null) {

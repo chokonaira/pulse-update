@@ -45,6 +45,24 @@ with everything else that platform turned up that day.
 
    It opens full screen like an app, and tells you when a newer brief is ready.
 
+## Use your own domain
+
+To serve it at something like `news.example.com`:
+
+1. Tell GitHub the domain first (GitHub recommends doing this before the DNS change):
+   ```bash
+   gh api -X PUT repos/<you>/<repo>/pages -f cname=news.example.com
+   ```
+   or Settings > Pages > Custom domain.
+2. Where your domain's DNS is managed, add a **CNAME** record: name `news`, value `<you>.github.io`.
+3. Once GitHub has issued the certificate (usually within an hour), turn on HTTPS:
+   ```bash
+   gh api -X PUT repos/<you>/<repo>/pages -F https_enforced=true
+   ```
+
+No CNAME file is needed, because the site is published by a workflow. To protect the
+domain from takeover, also verify it under your GitHub account's Settings > Pages.
+
 ## Choose your topics
 
 Edit `pulse.toml`. Each topic is a block:

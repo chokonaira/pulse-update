@@ -59,14 +59,21 @@ def source_entry(url: str, lookup: dict[str, dict], heat: dict[str, float]) -> d
     }
 
 
+FOOTER_ALIASES = {"hn": "hackernews", "hacker news": "hackernews", "web": "grounding",
+                  "twitter": "x", "x/twitter": "x"}
+
+
 def coverage(agent: dict | None, evidence_text: str) -> list[dict]:
     status = (agent or {}).get("source_status") or {}
-    details = {row["label"].lower(): row["detail"] for row in ev.footer_sources(evidence_text)}
+    details = {}
+    for row in ev.footer_sources(evidence_text):
+        key = row["label"].lower()
+        details[FOOTER_ALIASES.get(key, key)] = row["detail"]
     rows = []
     for source, state in sorted(status.items(), key=lambda kv: (kv[0] not in CORE_SOURCES, kv[0])):
         label = signals.source_label(source)
         if state == "ok":
-            detail = details.get(label.lower()) or details.get(source) or ""
+            detail = details.get(source) or details.get(label.lower()) or ""
             detail = clean_prose(detail.replace(" - ", ", "), 120)
             rows.append({"source": source, "label": label, "state": "ok", "detail": detail})
         elif state in FAILURE_STATES:

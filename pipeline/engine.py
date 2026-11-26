@@ -49,6 +49,11 @@ def _base_env(config_dir: Path) -> dict[str, str]:
     env["LAST30DAYS_CONFIG_DIR"] = str(config_dir)
     # Nothing is saved to a research folder; we read the outputs we asked for.
     env.pop("LAST30DAYS_MEMORY_DIR", None)
+    # On GitHub's servers, TikTok and Instagram without a ScrapeCreators key fall
+    # back to a keyless route that gets blocked there, so skip them.
+    if env.get("GITHUB_ACTIONS") == "true" and not env.get("SCRAPECREATORS_API_KEY", "").strip():
+        excluded = [s for s in env.get("EXCLUDE_SOURCES", "").split(",") if s.strip()]
+        env["EXCLUDE_SOURCES"] = ",".join(dict.fromkeys(excluded + ["tiktok", "instagram"]))
     return env
 
 
