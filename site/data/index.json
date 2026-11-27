@@ -1,8 +1,18 @@
 {
  "schema": 1,
  "title": "Pulse",
- "latest": "2026-11-26",
+ "latest": "2026-11-27",
  "days": [
+  {
+   "date": "2026-11-27",
+   "headline": "AI safety fights escalate as coding agents shift work to review",
+   "topics": [
+    "AI evals",
+    "AI safety",
+    "Coding agents"
+   ],
+   "stories": 14
+  },
   {
    "date": "2026-11-26",
    "headline": "AI safety fights escalate as coding agents shift burden",
