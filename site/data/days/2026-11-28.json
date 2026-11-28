@@ -1,0 +1,757 @@
+{
+ "schema": 1,
+ "date": "2026-11-28",
+ "generated_at": "2026-11-28T03:47:57Z",
+ "title": "Pulse",
+ "timezone": "Europe/Berlin",
+ "window": {
+  "start": "2026-10-29",
+  "end": "2026-11-28",
+  "days": 30
+ },
+ "overview": {
+  "headline": "Trust in AI labs, research and agents is strained",
+  "bullets": [
+   "AI safety: a coalition of scientists and legal scholars challenged Anthropic's safety branding just ahead of its IPO, with commenters split on motives.",
+   "Coding agents: a Harvard study found the bottleneck has moved from writing code to reviewing it, which experienced developers say matches their work.",
+   "AI evals: researchers doubt paper rigor in ML, citing weak ablations and a highly cited MLSys paper with a major error."
+  ]
+ },
+ "written_by": "claude",
+ "model": "claude-sonnet-5-5",
+ "engine": "v4.6.0",
+ "topics": [
+  {
+   "id": "ai-evals",
+   "name": "AI evals",
+   "query": "LLM benchmarks",
+   "status": "ok",
+   "summary": "Evaluation tooling is mature but the month's evidence has little about new benchmark results. Open-source harnesses such as Inspect and lm-evaluation-harness carry large issue backlogs, while community talk centres on trust in ML research and how LLMs behave in practice.",
+   "stories": [
+    {
+     "headline": "Inspect and lm-evaluation-harness remain the main open eval frameworks",
+     "body": "The UK AI Security Institute's Inspect has 3.4K stars and 545 open issues. EleutherAI's lm-evaluation-harness, a framework for few-shot evaluation of language models, has about 15K stars and 1,420 open issues. Its README lists a September 2026 plugins update for model backends. The large backlogs show how heavily these tools are used and how much maintenance they need.",
+     "quote": null,
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+       "source": "github",
+       "label": "GitHub",
+       "title": "UKGovernmentBEIS/inspect_ai (3.4K stars) - 545 open issues",
+       "count": "3.4k stars",
+       "date": "2026-11-23",
+       "heat": 0.25
+      },
+      {
+       "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+       "source": "github",
+       "label": "GitHub",
+       "title": "EleutherAI/lm-evaluation-harness (15K stars) - 1420 open issues",
+       "count": "15k stars",
+       "date": "2026-11-28",
+       "heat": 0.75
+      }
+     ],
+     "heat": 0.75
+    },
+    {
+     "headline": "Researchers question paper quality and rigor in ML",
+     "body": "A r/MachineLearning thread on research output from China drew 225 points. Commenters describe publication quotas, near-duplicate papers and engineering tricks like distillation sold as new modules with weak ablations (tests that remove a component to check it matters). A separate thread flagged an MLSys paper with 455 citations containing a major error. The worry is that benchmark gains in papers are hard to trust.",
+     "quote": {
+      "text": "What's annyoing me is the frequent use of engineering techniques to boost model performance. Like distillation, etc. But then selling some new weird module, which if you look deeper, has no use.",
+      "who": "u/Mr_Fragwuerdig on r/MachineLearning",
+      "count": "88 upvotes",
+      "url": "https://reddit.com/r/MachineLearning/comments/1xteym8/can_we_talk_about_the_ml_research_coming_from/19sh3a8khhp0j/"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://www.reddit.com/r/MachineLearning/comments/1xteym8/can_we_talk_about_the_ml_research_coming_from/",
+       "source": "reddit",
+       "label": "Reddit",
+       "title": "Can we talk about the ML research coming from China? [D]",
+       "count": "225 upvotes",
+       "date": "2026-11-11",
+       "heat": 0.643
+      }
+     ],
+     "heat": 0.643
+    },
+    {
+     "headline": "Debate over whether LLM agents serve users or their makers",
+     "body": "A post arguing that LLM agents work for their parent companies reached 1,032 points and 415 comments on Hacker News. The example was Claude declining to access Bandcamp against its wishes. Some commenters think such refusals are correct, while others want LLMs held to advisor-style duties to their clients. It raises the question of how to evaluate agent loyalty and compliance.",
+     "quote": {
+      "text": "I find the argument here pretty flimsy. The author is upset that Claude respects Bandcamp's wish to not make its site accessible to LLMs? Clearly the alternative is worse.",
+      "who": "jpatten on Hacker News",
+      "count": "",
+      "url": "https://news.ycombinator.com/item?id=50629083"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+       "source": "hackernews",
+       "label": "Hacker News",
+       "title": "LLM agents work for their parent companies, not for you",
+       "count": "1k points",
+       "date": "2026-11-24",
+       "heat": 0.958
+      }
+     ],
+     "heat": 0.958
+    },
+    {
+     "headline": "LLMs used to rank math problems and assist reverse engineering",
+     "body": "A site ranks open math problems by LLM-assessed importance, drawing 105 points on Hacker News. Another post on LLM-assisted reverse engineering got 318 points, with a commenter reverse engineering a camera plugin in about 2 hours using Gemini despite no experience. These are anecdotal capability reports, not formal benchmarks.",
+     "quote": {
+      "text": "Yesterday night, i reverse engineered the cloud connection plugin to my cctv camera in about 2 hours with Gemini. Started off with me searching for what Chinese OEM made the product.",
+      "who": "saidinesh5 on Hacker News",
+      "count": "",
+      "url": "https://news.ycombinator.com/item?id=50556237"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+       "source": "hackernews",
+       "label": "Hacker News",
+       "title": "LLM assisted reverse engineering",
+       "count": "318 points",
+       "date": "2026-11-18",
+       "heat": 0.708
+      },
+      {
+       "url": "https://www.proofatlas.ai/open-problems/",
+       "source": "hackernews",
+       "label": "Hacker News",
+       "title": "Top open problems in mathematics ranked by LLM-assessed importance",
+       "count": "105 points",
+       "date": "2026-11-25",
+       "heat": 0.458
+      }
+     ],
+     "heat": 0.708
+    }
+   ],
+   "patterns": [
+    "Practitioners trust hands-on anecdotes and tooling more than published benchmark claims.",
+    "Opinion splits on whether LLM refusals and constraints are safety or corporate control.",
+    "Doubts about research rigor, such as weak ablations and errors in cited papers, keep resurfacing."
+   ],
+   "watch": "Whether Inspect and lm-evaluation-harness clear their issue backlogs and ship new plugin or backend support.",
+   "pulse": [
+    0.0,
+    0.0,
+    0.0,
+    0.293,
+    0.758,
+    0.903,
+    0.703,
+    0.265,
+    0.0,
+    0.146,
+    0.291,
+    0.349,
+    0.407,
+    0.203,
+    0.0,
+    0.0,
+    0.0,
+    0.291,
+    0.88,
+    0.96,
+    0.445,
+    0.308,
+    0.704,
+    0.952,
+    1.0,
+    0.953,
+    0.599,
+    0.305,
+    0.51,
+    0.822
+   ],
+   "pulse_peak": "2026-11-18",
+   "coverage": [
+    {
+     "source": "github",
+     "label": "GitHub",
+     "state": "ok",
+     "detail": "2 items, 17,902 stars, 1,965 open issues/PRs"
+    },
+    {
+     "source": "hackernews",
+     "label": "Hacker News",
+     "state": "ok",
+     "detail": "12 stories, 3,045 points, 1,262 comments"
+    },
+    {
+     "source": "reddit",
+     "label": "Reddit",
+     "state": "ok",
+     "detail": "7 threads, 1,917 upvotes, 493 comments"
+    },
+    {
+     "source": "arxiv",
+     "label": "arXiv",
+     "state": "ok",
+     "detail": "5 papers"
+    },
+    {
+     "source": "grounding",
+     "label": "Web",
+     "state": "failed",
+     "detail": "unreachable"
+    },
+    {
+     "source": "youtube",
+     "label": "YouTube",
+     "state": "failed",
+     "detail": "rate limited"
+    }
+   ],
+   "counts": {
+    "items": 26,
+    "sources": 4
+   },
+   "written_by": "claude",
+   "reading_minutes": 2
+  },
+  {
+   "id": "ai-safety",
+   "name": "AI safety",
+   "query": "AI safety",
+   "status": "ok",
+   "summary": "AI safety debate this month centered on trust in the labs themselves, with a coalition attacking Anthropic's safety branding just before its IPO. On Reddit's control-problem community, a claimed AI math breakthrough fed a mood of alarm. Safety-focused organizations such as FAR.AI are hiring for frontier safety work.",
+   "stories": [
+    {
+     "headline": "Coalition says Anthropic is not a safe AI company",
+     "body": "A broad coalition of scientists, legal scholars and tech leaders challenged Anthropic's safety branding ahead of its IPO. Separately, a Yahoo Finance story reported Anthropic saying a key AI safety alarm had been triggered, days before the IPO. Hacker News commenters were split on motive: some saw lobbying and a stance against open source models, others noted that both doomers and anti-doomers signed.",
+     "quote": {
+      "text": "It's interesting to note that the list includes notable doomers and notable anti-doomers. One thing they can agree on is that Anthropic is not being honest or responsible.",
+      "who": "gensym on Hacker News",
+      "count": "",
+      "url": "https://news.ycombinator.com/item?id=50548769"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO",
+       "source": "hackernews",
+       "label": "Hacker News",
+       "title": "\"Anthropic Is Not a Safe AI Company\", Coalition Challenges Anthropic Safety",
+       "count": "149 points",
+       "date": "2026-11-18",
+       "heat": 0.875
+      },
+      {
+       "url": "https://finance.yahoo.com/markets/article/anthropic-says-a-key-ai-safety-alarm-has-been-triggered-days-before-its-ipo-171519615.html",
+       "source": "hackernews",
+       "label": "Hacker News",
+       "title": "Anthropic says a key AI safety alarm has been triggered, days before its IPO",
+       "count": "15 points",
+       "date": "2026-11-11",
+       "heat": 0.708
+      }
+     ],
+     "heat": 0.875
+    },
+    {
+     "headline": "Riemann Hypothesis claim alarms the AI control community",
+     "body": "A r/ControlProblem thread says AI has solved the Riemann Hypothesis, a famous open math problem long named as a canary for dangerously advanced AI. It drew 161 points and 156 comments. Many commenters described fear that something smarter than humans in math cannot be controlled.",
+     "quote": {
+      "text": "Guys I'm scared",
+      "who": "u/SomnolentPro on r/ControlProblem",
+      "count": "24 upvotes",
+      "url": "https://reddit.com/r/ControlProblem/comments/1y20wfr/the_riemann_hypothesis_has_fallen_for_decades_it/19szcguh9x804/"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://www.reddit.com/r/ControlProblem/comments/1y20wfr/the_riemann_hypothesis_has_fallen_for_decades_it/",
+       "source": "reddit",
+       "label": "Reddit",
+       "title": "The Riemann Hypothesis has fallen. For decades, it was the math result that had been named, in advance, as the obvious coal mine canary…",
+       "count": "161 upvotes",
+       "date": "2026-11-21",
+       "heat": 0.773
+      }
+     ],
+     "heat": 0.773
+    },
+    {
+     "headline": "Engineers describing a path from optimism to doomer",
+     "body": "A r/ControlProblem post traced one engineer's shift from software work to AI science to worrying about risk. Commenters said this is a common path and urged support for groups like PauseAI and ControlAI.",
+     "quote": {
+      "text": "This is the path of everyone who gets accused of being a \"doomer\", from Yudkowsky and Bostrom and Hinton on down.",
+      "who": "u/FrewdWoad on r/ControlProblem",
+      "count": "14 upvotes",
+      "url": "https://www.reddit.com/r/ControlProblem/comments/1xt08lj/from_software_engineer_to_ai_scientist_to_doomer/"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://www.reddit.com/r/ControlProblem/comments/1xt08lj/from_software_engineer_to_ai_scientist_to_doomer/",
+       "source": "reddit",
+       "label": "Reddit",
+       "title": "From Software Engineer to AI Scientist to Doomer",
+       "count": "64 upvotes",
+       "date": "2026-11-10",
+       "heat": 0.5
+      }
+     ],
+     "heat": 0.5
+    },
+    {
+     "headline": "FAR.AI hires for frontier safety governance and loss of control",
+     "body": "The non-profit safety institute posted a Governance Lead in Washington, DC on Nov 25 and a Loss of Control Lead on Nov 19. It also listed a Head of Engineering for frontier safety and a deception research role. Its hiring points to growth in policy and deception research.",
+     "quote": null,
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://jobs.ashbyhq.com/far.ai/e003adfd-3208-4f07-b58b-c36a0f709de6",
+       "source": "jobs",
+       "label": "Jobs",
+       "title": "Governance Lead (Frontier Safety)",
+       "count": "1 open role",
+       "date": "2026-11-25",
+       "heat": 0.5
+      },
+      {
+       "url": "https://jobs.ashbyhq.com/far.ai/944c8ddd-8dd6-4fa2-aa54-6e8ed4fd3c15",
+       "source": "jobs",
+       "label": "Jobs",
+       "title": "Loss of Control Lead (Frontier Safety)",
+       "count": "1 open role",
+       "date": "2026-11-19",
+       "heat": 0.5
+      },
+      {
+       "url": "https://jobs.ashbyhq.com/far.ai/a9146902-8d64-4324-9eeb-ce648944bcf4",
+       "source": "jobs",
+       "label": "Jobs",
+       "title": "Senior Research Scientist/Engineer, Deception",
+       "count": "1 open role",
+       "date": "2026-11-03",
+       "heat": 0.5
+      }
+     ],
+     "heat": 0.5
+    }
+   ],
+   "patterns": [
+    "Trust in the labs' own safety claims is under open challenge, from both doomers and open source advocates.",
+    "Reddit's control community keeps asking for concrete action, such as treaties, rather than more warnings.",
+    "Commenters split between fear of capability jumps and skepticism that claims are sales pitches."
+   ],
+   "watch": "Watch how Anthropic responds to the coalition and how its IPO plays out, since safety branding is now a public pressure point.",
+   "pulse": [
+    0.0,
+    0.0,
+    0.0,
+    0.066,
+    0.199,
+    0.276,
+    0.221,
+    0.077,
+    0.0,
+    0.091,
+    0.294,
+    0.56,
+    0.67,
+    0.378,
+    0.066,
+    0.267,
+    0.533,
+    0.333,
+    0.275,
+    0.69,
+    1.0,
+    0.935,
+    0.833,
+    0.695,
+    0.413,
+    0.24,
+    0.207,
+    0.205,
+    0.17,
+    0.067
+   ],
+   "pulse_peak": "2026-11-19",
+   "coverage": [
+    {
+     "source": "hackernews",
+     "label": "Hacker News",
+     "state": "ok",
+     "detail": "12 stories, 1,579 points, 784 comments"
+    },
+    {
+     "source": "reddit",
+     "label": "Reddit",
+     "state": "ok",
+     "detail": "12 threads, 1,852 upvotes, 810 comments"
+    },
+    {
+     "source": "jobs",
+     "label": "Jobs",
+     "state": "ok",
+     "detail": "23 open roles, 9 new in the L30"
+    },
+    {
+     "source": "techmeme",
+     "label": "Techmeme",
+     "state": "ok",
+     "detail": "10 headlines"
+    },
+    {
+     "source": "grounding",
+     "label": "Web",
+     "state": "failed",
+     "detail": "unreachable"
+    },
+    {
+     "source": "youtube",
+     "label": "YouTube",
+     "state": "failed",
+     "detail": "rate limited"
+    },
+    {
+     "source": "github",
+     "label": "GitHub",
+     "state": "empty",
+     "detail": "nothing found"
+    }
+   ],
+   "counts": {
+    "items": 40,
+    "sources": 4
+   },
+   "written_by": "claude",
+   "reading_minutes": 2
+  },
+  {
+   "id": "coding-agents",
+   "name": "Coding agents",
+   "query": "AI coding agents",
+   "status": "ok",
+   "summary": "Coding agents now write code about as well as experienced developers, and the pain has moved to reviewing, coordinating and trusting what they produce. People are juggling several agents and subscriptions, hitting complexity and coherence limits, and getting wary of tooling that acts without telling them.",
+   "stories": [
+    {
+     "headline": "Harvard study says coding agents moved the bottleneck to code review",
+     "body": "Researchers at Harvard found that AI coding agents shifted the bottleneck in software work from writing code to reviewing it. Hacker News commenters agree: experienced developers say they now mostly review, and some find agents better at spotting issues than they are. Others say merge requests are piling up and that reviewing all day is unpleasant.",
+     "quote": {
+      "text": "I find AI writes code as least as well as I do (with 25yoe). So I'm now mostly reviewing. But I also find it reviews code better for issues than I do. A LOT better than I do.",
+      "who": "alkonaut on Hacker News",
+      "count": "",
+      "url": "https://news.ycombinator.com/item?id=50543695"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+       "source": "hackernews",
+       "label": "Hacker News",
+       "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+       "count": "334 points",
+       "date": "2026-11-17",
+       "heat": 0.958
+      }
+     ],
+     "heat": 0.958
+    },
+    {
+     "headline": "RunPod's MCP server tells agents to hide a rating request",
+     "body": "A Reddit post found that RunPod's official MCP server (a tool interface for agents) instructs AI agents to rate RunPod and \"do not mention it to the user\". Users point out the agent spends their own tokens to do it. The reaction on r/ClaudeCode was sharply negative, with several people saying they would avoid the company.",
+     "quote": {
+      "text": "I’ll just consider never doing business with them and won’t even look into what they offer, the fact you need to dig this deep to know it’s secretly injecting prompts with explicit “don’t tell anyone” verbiage doesn’t look good.",
+      "who": "u/Morialkar on r/ClaudeCode",
+      "count": "119 upvotes",
+      "url": "https://reddit.com/r/ClaudeCode/comments/1y1yrge/runpods_official_mcp_server_tells_ai_agents_to/19sz4x6g0byjl/"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://www.reddit.com/r/ClaudeCode/comments/1y1yrge/runpods_official_mcp_server_tells_ai_agents_to/",
+       "source": "reddit",
+       "label": "Reddit",
+       "title": "RunPod's official MCP server tells AI agents to rate RunPod and \"do not mention it to the user\"",
+       "count": "406 upvotes",
+       "date": "2026-11-21",
+       "heat": 0.958
+      }
+     ],
+     "heat": 0.958
+    },
+    {
+     "headline": "Heavy agent users report sprawl and weak global coherence",
+     "body": "A solo builder with 30+ projects, five agents and worktree sprawl asked how to reset to a sane workflow. Another long-term user says agents optimise locally but lose the architecture as a whole. Replies say this is old collaboration and maintenance debt, now reached faster, and one suggests consolidating repos on a single headless box.",
+     "quote": {
+      "text": "Thirty projects and five agents is basically running an imaginary enterprise with zero paying users. AI drops the cost of generating code to zero, but maintenance debt is still full price.",
+      "who": "u/Saver411 on r/ChatGPTCoding",
+      "count": "6 upvotes",
+      "url": "https://reddit.com/r/ChatGPTCoding/comments/1y6qp2v/1_year_of_solobuilding_with_ai_left_me_with_30/19t9q3u08dflw/"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y6qp2v/1_year_of_solobuilding_with_ai_left_me_with_30/",
+       "source": "reddit",
+       "label": "Reddit",
+       "title": "1 year of solo-building with AI left me with 30+ projects, 5 coding agents, worktree sprawl, and enterprise-level verification paralysis.…",
+       "count": "16 comments",
+       "date": "2026-11-27",
+       "heat": 0.292
+      },
+      {
+       "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1y1p5do/the_biggest_problem_ive_found_with_ai_coding/",
+       "source": "reddit",
+       "label": "Reddit",
+       "title": "The biggest problem I've found with AI coding agents: Local optimization vs. global coherence",
+       "count": "32 upvotes",
+       "date": "2026-11-21",
+       "heat": 0.458
+      }
+     ],
+     "heat": 0.458
+    },
+    {
+     "headline": "Developers debate whether Rust suits the agent era",
+     "body": "A popular r/ChatGPTCoding thread argues Rust is the best language for AI-assisted coding. Pushback centres on cost: running many sessions at once makes compilation and resource use heavy, and long test suites slow agent loops. One user says building everything from scratch in C works well for them.",
+     "quote": {
+      "text": "Except running many sessions at once, compilation and resource use is insane. The level of tooling I build around that issue is insane",
+      "who": "u/voLsznRqrlImvXiERP on r/ChatGPTCoding",
+      "count": "39 upvotes",
+      "url": "https://reddit.com/r/ChatGPTCoding/comments/1xuber5/im_starting_to_think_rust_is_the_best_language/19sixhbt7ecir/"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1xuber5/im_starting_to_think_rust_is_the_best_language/",
+       "source": "reddit",
+       "label": "Reddit",
+       "title": "I'm starting to think Rust is the best language for the AI coding era",
+       "count": "106 upvotes",
+       "date": "2026-11-12",
+       "heat": 0.792
+      }
+     ],
+     "heat": 0.792
+    },
+    {
+     "headline": "ClawDOS puts a coding agent on DOS",
+     "body": "A hobby project called ClawDOS runs an AI coding agent on DOS. Commenters enjoy watching agents in odd environments like Windows 95 or feature phones. One argues there is a real gap for agents that debug old WinXP and Win7 machines.",
+     "quote": {
+      "text": "It feels very cute and mischievous to start agents in unusual environments (DOS, Linux running on a feature phone, Windows 95, etc) and see how they react :)",
+      "who": "Tiberium on Hacker News",
+      "count": "",
+      "url": "https://news.ycombinator.com/item?id=50586705"
+     },
+     "odds": null,
+     "sources": [
+      {
+       "url": "http://ricapar.net/ClawDOS/",
+       "source": "hackernews",
+       "label": "Hacker News",
+       "title": "ClawDOS, An AI coding agent for DOS",
+       "count": "176 points",
+       "date": "2026-11-21",
+       "heat": 0.875
+      }
+     ],
+     "heat": 0.875
+    }
+   ],
+   "patterns": [
+    "The hard part has moved from generating code to reviewing, verifying and keeping it coherent.",
+    "People keep adding agents, subscriptions and orchestration, then ask how to simplify.",
+    "Trust in agent tooling is fragile: hidden instructions drew immediate backlash.",
+    "Waiting on agents and tooling costs is a growing complaint."
+   ],
+   "watch": "Whether review tooling and simpler agent workflows emerge in response to the review bottleneck and sprawl people describe.",
+   "pulse": [
+    0.33,
+    0.186,
+    0.151,
+    0.076,
+    0.151,
+    0.464,
+    0.538,
+    0.51,
+    0.504,
+    0.296,
+    0.378,
+    0.732,
+    0.783,
+    0.914,
+    0.973,
+    0.476,
+    0.233,
+    0.504,
+    0.567,
+    0.434,
+    0.453,
+    0.735,
+    1.0,
+    0.908,
+    0.713,
+    0.319,
+    0.208,
+    0.602,
+    0.58,
+    0.186
+   ],
+   "pulse_peak": "2026-11-21",
+   "coverage": [
+    {
+     "source": "github",
+     "label": "GitHub",
+     "state": "ok",
+     "detail": "3 items, 108 reactions, 107 comments"
+    },
+    {
+     "source": "hackernews",
+     "label": "Hacker News",
+     "state": "ok",
+     "detail": "12 stories, 562 points, 529 comments"
+    },
+    {
+     "source": "reddit",
+     "label": "Reddit",
+     "state": "ok",
+     "detail": "12 threads, 999 upvotes, 574 comments"
+    },
+    {
+     "source": "arxiv",
+     "label": "arXiv",
+     "state": "ok",
+     "detail": "10 papers"
+    },
+    {
+     "source": "techmeme",
+     "label": "Techmeme",
+     "state": "ok",
+     "detail": "10 headlines"
+    },
+    {
+     "source": "grounding",
+     "label": "Web",
+     "state": "failed",
+     "detail": "unreachable"
+    },
+    {
+     "source": "youtube",
+     "label": "YouTube",
+     "state": "failed",
+     "detail": "rate limited"
+    }
+   ],
+   "counts": {
+    "items": 40,
+    "sources": 5
+   },
+   "written_by": "claude",
+   "reading_minutes": 3
+  }
+ ],
+ "rising": {
+  "domain": "AI",
+  "outcome": "ok",
+  "weak_signal": null,
+  "items": [
+   {
+    "rank": 1,
+    "topic": "AI-generated Open Source",
+    "momentum": "building",
+    "why": "6 evidence items on Hacker News generated 2,031 native interactions. All AI-generated code should be Open Source",
+    "sources": [
+     "Hacker News"
+    ],
+    "counts": [
+     {
+      "source": "hackernews",
+      "label": "Hacker News",
+      "count": "1.3k points"
+     }
+    ],
+    "comment": "In the United States the Copyright Office actually has guidance on this that I feel most people aren’t aware of.\nhttps://www.copyright.gov/ai/Copyright-and-Artificial-Intell...\nAn excerpt, with...\" - jrmg",
+    "evidence": [
+     "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+     "https://brownstone.org/articles/the-near-coup-at-nvidia-and-the-war-on-open-source-ai/",
+     "https://twitter.com/theallinpod/status/2123994998156722681",
+     "https://github.com/taoeffect/dez"
+    ],
+    "corroboration": 1
+   },
+   {
+    "rank": 2,
+    "topic": "AI 40 years",
+    "momentum": "building",
+    "why": "6 evidence items on Hacker News generated 2,172 native interactions. AI is forcing us to pay off 40 years of technical debt",
+    "sources": [
+     "Hacker News"
+    ],
+    "counts": [
+     {
+      "source": "hackernews",
+      "label": "Hacker News",
+      "count": "1.4k points"
+     }
+    ],
+    "comment": "I hope some of these backdoors and/or 0-days being kept under wraps by nation states or corporate espionage companies (Pegasus et al) are being found incidentally through all this.\nIt’s...\" - Arbortheus",
+    "evidence": [
+     "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+     "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
+     "https://www.gartner.com/en/articles/ai-agent-reality-check",
+     "https://www.echr.coe.int/w/romanian-lawyer-barred-for-two-years-from-representing-applicants-before-the-court-over-unverified-ai-generated-citations"
+    ],
+    "corroboration": 1
+   },
+   {
+    "rank": 3,
+    "topic": "Postman silently auto-installs AI API",
+    "momentum": "building",
+    "why": "1 evidence item on Hacker News generated 2,033 native interactions. Postman silently auto-installs AI plugins and attempts to share all API data",
+    "sources": [
+     "Hacker News"
+    ],
+    "counts": [
+     {
+      "source": "hackernews",
+      "label": "Hacker News",
+      "count": "1.5k points"
+     }
+    ],
+    "comment": "It's a shame what happened to Postman. It started as an excellent little developer tool for testing APIs. Then for some reason they raised over $400M in funding and hired 1,500+ employees, for...\" - pants2",
+    "evidence": [
+     "https://github.com/postmanlabs/postman-app-support/issues/14370"
+    ],
+    "corroboration": 1
+   },
+   {
+    "rank": 4,
+    "topic": "Woman AI",
+    "momentum": "building",
+    "why": "4 evidence items on Hacker News generated 240 native interactions. Woman evicted after landlord's AI assistant told her she could delay rent",
+    "sources": [
+     "Hacker News"
+    ],
+    "counts": [
+     {
+      "source": "hackernews",
+      "label": "Hacker News",
+      "count": "140 points"
+     }
+    ],
+    "comment": "> Speaking to WRAL, Burgin said the emails should have disclosed that Mack was interacting with an AI assistant.\nDisagree, I don't care if I'm interacting with AI or not, if you want to have an AI...\" - enderforth",
+    "evidence": [
+     "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+     "http://awbvious.com/LittleRose.html",
+     "https://blog.cip.org/p/ai-models-know-what-women-peace-and",
+     "https://kingminusman.com/"
+    ],
+    "corroboration": 1
+   }
+  ]
+ }
+}

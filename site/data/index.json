@@ -1,8 +1,18 @@
 {
  "schema": 1,
  "title": "Pulse",
- "latest": "2026-11-27",
+ "latest": "2026-11-28",
  "days": [
+  {
+   "date": "2026-11-28",
+   "headline": "Trust in AI labs, research and agents is strained",
+   "topics": [
+    "AI evals",
+    "AI safety",
+    "Coding agents"
+   ],
+   "stories": 13
+  },
   {
    "date": "2026-11-27",
    "headline": "AI safety fights escalate as coding agents shift work to review",
